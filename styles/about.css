@@ -1,0 +1,61 @@
+.r-hex {
+  overflow: hidden;
+  display: inline-block;
+  margin: 4em 0;
+  width: 20em;
+  height: 17.32em;
+  transform: rotate(-30deg) skewX(30deg);
+  border-radius: 1em;
+}
+
+.r-hex *,
+.r-hex *:before {
+  display: block;
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+
+.r-hex-inner {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+  cursor: pointer;
+}
+
+.r-hex:first-child .r-hex-inner:before,
+.r-hex-inner-2 {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+}
+
+.r-hex-inner-2:before {
+  margin-top: -1.5em;
+  height: 20em;
+  transform: skewX(-30deg) rotate(-90deg);
+  background-image: url('../public/about.jpeg');
+  background-size: cover;
+  line-height: 20em;
+  text-align: center;
+  content: '';
+}
+
+.bgAbout {
+  background-image: url('../public/bgAbout.png');
+  background-size: cover;
+  width: 700px;
+  height: 500px;
+  transform: rotate(-193deg);
+  position: absolute;
+  top: -97px;
+  left: -349px;
+  z-index: -1;
+}
+
+.title::after{
+  width: 10%;
+  margin-top: 5px;
+  background-color: #d1a916;
+  height: 5px;
+  content: '';
+  display: block;
+  border-radius: 10px;
+}
