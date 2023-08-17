@@ -28,8 +28,8 @@ body {
   overflow: hidden;
 }
 
-.css-xz6gs5-MuiPaper-root-MuiAppBar-root {
-  border-bottom: 1px solid #283c3a1c;
+.css-xz6gs5-MuiPaper-root-MuiAppBar-root{
+  border-bottom: 1px solid #283c3a1c !important;
 }
 
 :where(.css-dev-only-do-not-override-byeoj0).ant-btn.ant-btn-round.ant-btn-lg {
