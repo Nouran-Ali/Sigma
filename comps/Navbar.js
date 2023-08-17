@@ -85,7 +85,7 @@ function Navbar() {
             component="a"
             href="/"
             sx={{
-              mr: 30,
+              mr: 25,
               ml: 9,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
@@ -98,7 +98,7 @@ function Navbar() {
             <img src='../logo.png' width="50px" />
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} className="ml-8">
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} className="ml-7">
             <IconButton
               size="large"
               aria-label="account of current user"
