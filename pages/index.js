@@ -5,7 +5,7 @@ import Steper from '@/comps/Steper';
 
 export default function Home() {
   return (
-    <div className=''>
+    <div className='home_page'>
       <div className='grid grid-cols-2 gap-4 '>
         <img src='../circle.png' width="100px" className={`absolute top-36 left-16 z-[-1]`} />
         <div className='mt-28'>
@@ -23,7 +23,7 @@ export default function Home() {
           <div className={`absolute origin-center rotate-45 ${styles.background}`}></div>
           <img src='../waves.png' width="90px" className={`absolute top-5 right-32 h-[50px]`} />
           <img src='../close2.png' width="30px" className={`absolute top-44 right-16`} />
-          <img src='../architectural.png' width="450px" className={`absolute top-35 right-20 ${styles.architectural}`} />
+          <img src='../architectural.png' width="450px" className={` ${styles.architectural}`} />
         </div>
       </div>
     </div>

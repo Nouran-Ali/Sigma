@@ -16,7 +16,7 @@
   }
 }
 
-*{
+* {
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -28,11 +28,11 @@ body {
   overflow: hidden;
 }
 
-.css-xz6gs5-MuiPaper-root-MuiAppBar-root{
+.css-xz6gs5-MuiPaper-root-MuiAppBar-root {
   border-bottom: 1px solid #283c3a1c !important;
 }
 
-:where(.css-dev-only-do-not-override-byeoj0).ant-btn.ant-btn-round.ant-btn-lg {
+.home_page :where(.css-dev-only-do-not-override-byeoj0).ant-btn.ant-btn-round.ant-btn-lg {
   background-color: #384e4c10 !important;
   color: #7a9595 !important;
   border: 1px solid #384e4c3b !important;

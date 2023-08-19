@@ -13,6 +13,7 @@
 
 .architectural {
     position: relative;
+    left: 50px;
     animation-name: example;
     animation-duration: 5s;
     animation-timing-function: linear;
