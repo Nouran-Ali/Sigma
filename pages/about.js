@@ -4,10 +4,10 @@ const About = () => {
         <div className="grid grid-cols-2 gap-4">
             <div className="relative">
                 <div>
-                    <img src='../rightTriangle2.png' width='20px' className="absolute right-20 top-20"/>
-                    <img src='../yield.png' width='20px' className="absolute right-44 top-10"/>
-                    <img src='../rightTriangle3.png' width='20px' className="absolute left-20 top-96"/>
-                    <img src='../yield2.png' width='20px' className="absolute left-10 top-80"/>
+                    <img src='../rightTriangle2.png' width='20px' className="absolute right-20 top-20" />
+                    <img src='../yield.png' width='20px' className="absolute right-44 top-10" />
+                    <img src='../rightTriangle3.png' width='20px' className="absolute left-20 top-96" />
+                    <img src='../yield2.png' width='20px' className="absolute left-10 top-80" />
                     {/* <img src='../yield2.png' width='20px' /> */}
                 </div>
                 <div className='r-hex'>

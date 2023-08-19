@@ -72,12 +72,12 @@
 
 @keyframes fade-right {
   0% {
-    right: 0px;
+    right: -70px;
     opacity: 0;
   }
 
   100% {
-    right: 95px;
+    right: 0px;
     opacity: 1;
   }
 }
