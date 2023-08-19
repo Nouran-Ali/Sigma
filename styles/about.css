@@ -6,6 +6,9 @@
   height: 17.32em;
   transform: rotate(-30deg) skewX(30deg);
   border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
 }
 
 .r-hex *,
@@ -41,16 +44,16 @@
 .bgAbout {
   background-image: url('../public/bgAbout.png');
   background-size: cover;
-  width: 700px;
-  height: 500px;
-  transform: rotate(-193deg);
+  width: 729px;
+  height: 571px;
+  transform: rotate(-307deg);
   position: absolute;
   top: -97px;
   left: -349px;
   z-index: -1;
 }
 
-.title::after{
+.title::after {
   width: 10%;
   margin-top: 5px;
   background-color: #d1a916;
