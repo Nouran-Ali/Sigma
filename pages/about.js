@@ -8,6 +8,9 @@ const About = () => {
                     <img src='../yield.png' width='20px' className="absolute right-44 top-10" />
                     <img src='../rightTriangle3.png' width='20px' className="absolute left-20 top-96" />
                     <img src='../yield2.png' width='20px' className="absolute left-10 top-80" />
+                    <img src='../circle4.png' width='10px' className="absolute left-36 top-20" />
+                    <img src='../circle3.png' width='10px' className="absolute left-52 top-96" />
+                    <img src='../circle4.png' width='10px' className="absolute right-24 top-44" />
                     {/* <img src='../yield2.png' width='20px' /> */}
                 </div>
                 <div className='r-hex'>
