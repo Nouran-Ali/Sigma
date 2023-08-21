@@ -4,6 +4,7 @@ import styles from "../styles/home.module.css";
 import Steper from '@/comps/Steper';
 
 export default function Home() {
+
   return (
     <div className='home_page'>
       <div className='grid grid-cols-2 gap-4 '>
@@ -13,7 +14,10 @@ export default function Home() {
             <h1 className='text-4xl font-bold uppercase leading-relaxed'><span className='text-[#7a9595]'>Sigma</span> <br /> <span className=''>Architectural Contracting</span></h1>
             <p className='text-[#909191] leading-relaxed mt-4 w-96'>Sigma is a progressive architectural practice providing high-quality architectural and construction services for the domestic, industrial, and commercial sectors.</p>
             <Button shape="round" size="large" className='mt-7'>
-              Read more
+              <div className='flex content-center'>
+                Read more
+                <img src='../star.png' width='25px' height="10px" className='ml-3'/>
+              </div>
             </Button>
           </div>
           <img src='../wave2.png' width="90px" className={`absolute top-3/4 left-10 mt-16`} />
