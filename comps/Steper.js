@@ -23,7 +23,7 @@ const Steper = () => {
   }
 
   return (
-    <div className='flex absolute left-1/2 bottom-20 ml-3'>
+    <div className={`flex absolute bottom-5 ${styles.steper}`}>
       <button className={`${styles.arrows} pb-3 pt-1 px-3 rounded-full mr-4`} onClick={handlePrev}>
         <LeftOutlined />
       </button>

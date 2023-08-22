@@ -1,52 +1,86 @@
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { useState } from 'react';
+import styles from "../styles/services.module.css";
 
 const services = () => {
 
-    const [stepOne, setStepOne] = useState(false)
+    const [currentCardNumber, setCurrentCardNumber] = useState(0)
+
+    const handleNextCard = () => {
+        if (currentCardNumber == 2) {
+            setCurrentCardNumber(0)
+        } else {
+            setCurrentCardNumber(currentCardNumber + 1)
+        }
+    }
 
     return (
-        <div className='flex mt-10'>
-            <div >
+        <div className='flex mt-9'>
+            <div className={`absolute top-28 ${styles.animation}`}>
                 <p className='text-[#d1a916] font-semibold text-2xl'>Services</p>
-                <h1 className='font-bold text-4xl text-[#304644]'>Sigma Architectural Contracting</h1>
+                <h1 className='font-bold text-4xl text-[#304644] mt-3'>Sigma Architectural<br /> Contracting</h1>
             </div>
-            <div className='text-center bg-[#e8e8e8] rounded-[80px] w-4/5 h-56 p-8'>
-                <p className='text-[#7c7c7c]'>loremgerherherdhrddddddddrjttttttttttttttttttttttttttertjrtjrstjrftjhrstjrstjsthtjxdthtrjrstjhrd</p>
-                <div className='grid grid-cols-3 gap-5 mt-10'>
-                    <div className='bg-white rounded-[80px] h-80 p-8'>
-                        <img src='../logo.png' width="50px" className='mx-auto' />
-                        <h2 className='font-semibold'>Design</h2>
-                        <p>Expert architectural design service for stunning and functional spaces that enhance your lifestyle.</p>
-                        <div className='text-right rounded-full bg-[#304644]'>
-                            <ArrowRightOutlined />
-                        </div>
-                    </div>
-                    <div className='bg-white rounded-[80px] h-80 p-8'>
-                        <img src='../logo.png' width="50px" className='mx-auto' />
-                        <h2 className='font-semibold'>Construction</h2>
-                        <p>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
-                        <div className='text-right rounded-full bg-[#304644]' onClick={setStepOne}>
-                            <ArrowRightOutlined />
-                        </div>
-                    </div>
+            <div className='bg-[#e8e8e8] rounded-[80px] w-9/12 h-80 pl-20 p-10 ml-auto mr-5'>
+                <h3 className='absolute left-80 top-64 font-bold -rotate-90 text-5xl text-white opacity-25'>Services</h3>
+                <img src='../clean.png' className={`${styles.stars} absolute`} />
+                <p className={`text-[#7c7c7c] ml-4 ${styles.animation3}`}>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                <div className={`grid grid-cols-3 gap-5 mt-10 text-center ${styles.animation2}`}>
+
                     {
-                        stepOne ? <>
-                            <div className='bg-white rounded-[80px] h-80 p-5'>
-                                <img src='../logo.png' width="50px" className='mx-auto' />
-                                <h2 className='font-semibold'>Engineering Services</h2>
-                                <p>Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs.</p>
-                                <div className='text-right rounded-full bg-[#304644]'>
+                        currentCardNumber == 0 ?
+                            <div className='bg-white rounded-[70px] h-80 p-5 relative' id='0'>
+                                <img src='../design.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Design</h2>
+                                <p className='text-base text-[#919191]'>Expert architectural design service for stunning and functional spaces that enhance your lifestyle.</p>
+                                <button className='absolute bottom-10 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916]' onClick={handleNextCard}>
+                                    <ArrowRightOutlined />
+                                </button>
+                            </div>
+                            :
+                            <div className='rounded-[80px] h-80 p-5'>
+                                <img src='../design.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Design</h2>
+                            </div>
+                    }
+
+                    {
+                        currentCardNumber == 1 ?
+                            <div className='bg-white rounded-[80px] h-80 p-5 relative' id='1'>
+                                <img src='../construction.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
+                                <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
+                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916]' onClick={handleNextCard}>
                                     <ArrowRightOutlined />
                                 </div>
                             </div>
-                        </>
                             :
                             <div className='rounded-[80px] h-80 p-5'>
-                                <img src='../logo.png' width="50px" className='mx-auto' />
-                                <h2 className='font-semibold'>Engineering Services</h2>
+                                <img src='../construction.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
                             </div>
                     }
+
+                    {
+                        currentCardNumber == 2 ?
+                            <div className='bg-white rounded-[80px] h-80 p-5 relative' id='2'>
+                                <img src='../analysis.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
+                                <p className='text-base text-[#919191]'>Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs.</p>
+                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916]' onClick={handleNextCard}>
+                                    <ArrowRightOutlined />
+                                </div>
+                            </div>
+                            :
+                            <div className='rounded-[80px] h-80 p-5'>
+                                <img src='../analysis.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
+                            </div>
+                    }
+
+                    {/* <div className='rounded-[80px] h-80 p-5'>
+                        <img src='../design.png' width="50px" className='mx-auto' />
+                        <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
+                    </div> */}
                 </div>
             </div>
         </div>
