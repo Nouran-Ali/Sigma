@@ -1,5 +1,6 @@
 import '@/styles/globals.css';
 import '@/styles/about.css';
+import '@/styles/our_work.css';
 import { Head } from "next/document";
 import Layout from "./../comps/Layout";
 

@@ -7,7 +7,7 @@ const services = () => {
     const [currentCardNumber, setCurrentCardNumber] = useState(0)
 
     const handleNextCard = () => {
-        if (currentCardNumber == 2) {
+        if (currentCardNumber == 1) {
             setCurrentCardNumber(0)
         } else {
             setCurrentCardNumber(currentCardNumber + 1)
@@ -26,7 +26,7 @@ const services = () => {
                 <p className={`text-[#7c7c7c] ml-4 ${styles.animation3}`}>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                 <div className={`grid grid-cols-3 gap-5 mt-10 text-center ${styles.animation2}`}>
 
-                    {
+                    {/* {
                         currentCardNumber == 0 ?
                             <div className='bg-white rounded-[70px] h-80 p-5 relative' id='0'>
                                 <img src='../design.png' width="50px" className='mx-auto' />
@@ -41,11 +41,11 @@ const services = () => {
                                 <img src='../design.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Design</h2>
                             </div>
-                    }
+                    } */}
 
                     {
-                        currentCardNumber == 1 ?
-                            <div className='bg-white rounded-[80px] h-80 p-5 relative' id='1'>
+                        currentCardNumber == 0 ?
+                            <div className='bg-white rounded-[80px] h-80 p-5 relative' id='0'>
                                 <img src='../construction.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
                                 <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
@@ -61,8 +61,8 @@ const services = () => {
                     }
 
                     {
-                        currentCardNumber == 2 ?
-                            <div className='bg-white rounded-[80px] h-80 p-5 relative' id='2'>
+                        currentCardNumber == 1 ?
+                            <div className='bg-white rounded-[80px] h-80 p-5 relative' id='1'>
                                 <img src='../analysis.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
                                 <p className='text-base text-[#919191]'>Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs.</p>
