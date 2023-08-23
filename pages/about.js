@@ -31,7 +31,9 @@ const About = () => {
                 </div>
                 <div className="mt-20 animation">
                     <h1 className="text-4xl font-bold uppercase leading-relaxed title">About <span className="text-[#7a9595]">Sigma</span></h1>
-                    <p className="text-[#909191] leading-relaxed mt-4">Sigma is a progressive architectural practice providing high quality architectural and construction services for the domestic , industrial and commercial sectors. <br /> We are committed to low energy sustainable design providing appropriate, imaginative, cost effective and technical solutions to meet our client’s individual requirements.<br /> We implement and manage our input into each project to the highest professional standards, meeting with our clients requirements with clear communication throughout the project.</p>
+                    <p className="text-[#909191] leading-relaxed mt-4">Sigma is a progressive architectural practice providing high quality architectural and construction services for the domestic , industrial and commercial sectors. <br />
+                        We are committed to providing appropriate, imaginative, cost-effective, and technical solutions to meet our client’s individual requirements.<br />
+                        We implement and manage our input into each project to the highest professional standards, meeting with our clients requirements with clear communication throughout the project.</p>
 
                 </div>
             </div>

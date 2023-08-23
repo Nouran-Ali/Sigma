@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Radio, Space, Tabs } from 'antd';
 import Supervision from '@/comps/Supervision';
 import Construction from '@/comps/Construction';
+import Planing from '@/comps/Planing';
 
 const OurWork = () => {
 
@@ -19,7 +20,7 @@ const OurWork = () => {
     {
       key: '3',
       label: 'PLANING',
-      children: <Supervision />,
+      children: <Planing />,
     },
   ];
 
@@ -34,14 +35,6 @@ const OurWork = () => {
         tabPosition={tabPosition}
         items={items}
         defaultActiveKey="1"
-      // items={new Array(3).fill(null).map((_, i) => {
-      //   const id = String(i + 1);
-      //   return {
-      //     label: `Tab ${id}`,
-      //     key: id,
-      //     children: `Content of Tab ${id}`,
-      //   };
-      // })}
       />
     </div>
   )

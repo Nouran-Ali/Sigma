@@ -31,3 +31,32 @@
 .toolbar-wrapper .anticon:hover {
     opacity: 0.3;
 }
+
+.images_ourwork {
+    position: absolute;
+    top: 220px;
+}
+
+.images_ourwork_left {
+    position: absolute;
+    top: 220px;
+    left: 562px;
+}
+
+.images_ourwork_center {
+    position: absolute;
+    top: 318px;
+    left: 294px;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-carousel .slick-dots-bottom{
+    bottom: -20px;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-carousel .slick-dots li button{
+    background: black;
+    color: black;
+}
+:where(.css-dev-only-do-not-override-byeoj0).ant-carousel .slick-dots li.slick-active button{
+    background-color: black;
+}
