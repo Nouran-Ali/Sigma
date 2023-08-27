@@ -41,7 +41,7 @@ const Planing = () => {
                         width={250}
                         height={200}
                         src={src1}
-                        className='rounded-lg'
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -66,10 +66,10 @@ const Planing = () => {
 
                 <div className='ml-5'>
                     <Image
-                        width={250}
+                        width={300}
                         height={300}
                         src={src2}
-                        className='rounded-lg'
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -96,7 +96,7 @@ const Planing = () => {
                         width={250}
                         height={200}
                         src={src4}
-                        className='rounded-lg'
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -126,7 +126,7 @@ const Planing = () => {
                         width={250}
                         height={200}
                         src={src3}
-                        className='rounded-lg'
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -150,10 +150,10 @@ const Planing = () => {
                 </div>
                 <div className='images_ourwork_center'>
                     <Image
-                        width={250}
+                        width={300}
                         height={100}
                         src={src6}
-                        className='rounded-lg'
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -180,7 +180,7 @@ const Planing = () => {
                         width={250}
                         height={200}
                         src={src5}
-                        className='rounded-lg'
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,

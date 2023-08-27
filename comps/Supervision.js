@@ -6,23 +6,15 @@ import {
     ZoomInOutlined,
     ZoomOutOutlined,
 } from '@ant-design/icons';
-import { Carousel, Image, Space } from 'antd';
-const src1 = '../13.png';
-const src2 = '../14.png';
-const src3 = '../15.jpg';
-const src4 = '../9.png';
-const src5 = '../10.png';
-const src6 = '../11.png';
-const src7 = '../12.png';
+import { Image, Space } from 'antd';
+const src1 = '../16.jpg';
+const src2 = '../17.jpg';
+const src3 = '../18.jpg';
+const src4 = '../19.jpg';
+const src5 = '../20.jpg';
 
-const contentStyle = {
-    height: '100%',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-};
 
-const Supervision = () => {
+const Construction = () => {
 
     const onDownload = () => {
         fetch(src1)
@@ -41,113 +33,12 @@ const Supervision = () => {
 
     return (
         <>
-
-            <Carousel autoplay>
+            <div className='flex items-start'>
                 <div>
-                    <div className='flex items-start'>
-                        <div>
-                            <Image
-                                width={300}
-                                height={300}
-                                src={src1}
-                                className='rounded-lg'
-                                preview={{
-                                    toolbarRender: (
-                                        _,
-                                        {
-                                            transform: { scale },
-                                            actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
-                                        },
-                                    ) => (
-                                        <Space size={12} className="toolbar-wrapper">
-                                            <DownloadOutlined onClick={onDownload} />
-                                            <SwapOutlined rotate={90} onClick={onFlipY} />
-                                            <SwapOutlined onClick={onFlipX} />
-                                            <RotateLeftOutlined onClick={onRotateLeft} />
-                                            <RotateRightOutlined onClick={onRotateRight} />
-                                            <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
-                                            <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
-                                        </Space>
-                                    ),
-                                }}
-                            />
-                        </div>
-
-                        <div className='ml-5'>
-                            <Image
-                                width={300}
-                                height={300}
-                                src={src2}
-                                className='rounded-lg'
-                                preview={{
-                                    toolbarRender: (
-                                        _,
-                                        {
-                                            transform: { scale },
-                                            actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
-                                        },
-                                    ) => (
-                                        <Space size={12} className="toolbar-wrapper">
-                                            <DownloadOutlined onClick={onDownload} />
-                                            <SwapOutlined rotate={90} onClick={onFlipY} />
-                                            <SwapOutlined onClick={onFlipX} />
-                                            <RotateLeftOutlined onClick={onRotateLeft} />
-                                            <RotateRightOutlined onClick={onRotateRight} />
-                                            <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
-                                            <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
-                                        </Space>
-                                    ),
-                                }}
-                            />
-                        </div>
-                        <div className='ml-5'>
-                            <Image
-                                width={300}
-                                height={300}
-                                src={src3}
-                                className='rounded-lg'
-                                preview={{
-                                    toolbarRender: (
-                                        _,
-                                        {
-                                            transform: { scale },
-                                            actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
-                                        },
-                                    ) => (
-                                        <Space size={12} className="toolbar-wrapper">
-                                            <DownloadOutlined onClick={onDownload} />
-                                            <SwapOutlined rotate={90} onClick={onFlipY} />
-                                            <SwapOutlined onClick={onFlipX} />
-                                            <RotateLeftOutlined onClick={onRotateLeft} />
-                                            <RotateRightOutlined onClick={onRotateRight} />
-                                            <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
-                                            <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
-                                        </Space>
-                                    ),
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 style={contentStyle}>2</h3>
-                </div>
-                <div>
-                    <h3 style={contentStyle}>3</h3>
-                </div>
-                <div>
-                    <h3 style={contentStyle}>4</h3>
-                </div>
-            </Carousel>
-
-
-
-            {/* <div className='flex self-start'>
-                <div className='images_ourwork'>
                     <Image
                         width={250}
                         height={200}
-                        src={src3}
+                        src={src1}
                         className='rounded-lg'
                         preview={{
                             toolbarRender: (
@@ -170,12 +61,70 @@ const Supervision = () => {
                         }}
                     />
                 </div>
-                <div className='images_ourwork_center'>
+
+                <div className='ml-5'>
+                    <Image
+                        width={300}
+                        height={300}
+                        src={src2}
+                        className='rounded-lg image_ourWork'
+                        preview={{
+                            toolbarRender: (
+                                _,
+                                {
+                                    transform: { scale },
+                                    actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
+                                },
+                            ) => (
+                                <Space size={12} className="toolbar-wrapper">
+                                    <DownloadOutlined onClick={onDownload} />
+                                    <SwapOutlined rotate={90} onClick={onFlipY} />
+                                    <SwapOutlined onClick={onFlipX} />
+                                    <RotateLeftOutlined onClick={onRotateLeft} />
+                                    <RotateRightOutlined onClick={onRotateRight} />
+                                    <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
+                                    <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
+                                </Space>
+                            ),
+                        }}
+                    />
+                </div>
+                <div className='ml-5'>
                     <Image
                         width={250}
-                        height={100}
-                        src={src6}
-                        className='rounded-lg'
+                        height={200}
+                        src={src4}
+                        className='rounded-lg image_ourWork'
+                        preview={{
+                            toolbarRender: (
+                                _,
+                                {
+                                    transform: { scale },
+                                    actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
+                                },
+                            ) => (
+                                <Space size={12} className="toolbar-wrapper">
+                                    <DownloadOutlined onClick={onDownload} />
+                                    <SwapOutlined rotate={90} onClick={onFlipY} />
+                                    <SwapOutlined onClick={onFlipX} />
+                                    <RotateLeftOutlined onClick={onRotateLeft} />
+                                    <RotateRightOutlined onClick={onRotateRight} />
+                                    <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
+                                    <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
+                                </Space>
+                            ),
+                        }}
+                    />
+                </div>
+            </div>
+
+            <div className='flex self-start'>
+                <div className='images_ourwork'>
+                    <Image
+                        width={250}
+                        height={200}
+                        src={src3}
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -202,7 +151,7 @@ const Supervision = () => {
                         width={250}
                         height={200}
                         src={src5}
-                        className='rounded-lg'
+                        className='rounded-lg image_ourWork'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -224,9 +173,9 @@ const Supervision = () => {
                         }}
                     />
                 </div>
-            </div> */}
+            </div>
         </>
     )
 }
 
-export default Supervision
+export default Construction
