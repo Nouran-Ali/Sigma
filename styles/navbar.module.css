@@ -1,6 +1,7 @@
 .link {
     color: #304644;
     margin-left: 20px;
+    margin-right: 20px;
     font-weight: 600;
     padding: 7px 13px;
     transition: all 0.25s ease-in-out;

@@ -24,7 +24,7 @@ const services = () => {
                 <h3 className={`absolute left-80 top-64 font-bold -rotate-90 text-5xl text-white opacity-25 ${styles.d_none}`}>Services</h3>
                 <img src='../clean.png' className={`${styles.stars} absolute`} />
                 <p className={`text-[#7c7c7c] ml-4 ${styles.animation3}`}>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                <div className={`grid grid-cols-3 max-xl:grid-cols-2 gap-5 mt-10 text-center ${styles.animation2}`}>
+                <div className={`grid grid-cols-3 max-xl:grid-cols-1 gap-5 mt-10 text-center ${styles.animation2}`}>
 
                     {/* {
                         currentCardNumber == 0 ?
