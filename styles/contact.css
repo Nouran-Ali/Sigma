@@ -65,8 +65,8 @@
 .bg_contact {
   background-image: url('../public/world_map.png');
   position: absolute;
-  top: 0px;
-  left: 10px;
+  top: -100px;
+  left: -100px;
   width: 800px;
   height: 700px;
   background-size: cover;

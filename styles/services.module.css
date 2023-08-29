@@ -56,3 +56,9 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 1280px) {
+    .d_none , .stars , .animation3 , .close{
+        display: none;
+    }
+}

@@ -1,8 +1,8 @@
 
 const About = () => {
     return (
-        <div className="grid grid-cols-2 gap-4">
-            <div className="relative">
+        <div className="grid grid-cols-2 gap-4 max-xl:grid-cols-1">
+            <div className="relative d_none">
                 <div>
                     <img src='../rightTriangle2.png' width='20px' className="absolute right-20 top-20" />
                     <img src='../yield.png' width='20px' className="absolute right-44 top-10" />
@@ -29,7 +29,7 @@ const About = () => {
                     <img src='../dots.png' width='50px' />
                     <img src='../dots.png' width='50px' className="mt-[-5px]" />
                 </div>
-                <div className="mt-20 animation">
+                <div className="mt-20 max-xl:mt-7 max-xl:ml-5 animation">
                     <h1 className="text-4xl font-bold uppercase leading-relaxed title">About <span className="text-[#7a9595]">Sigma</span></h1>
                     <p className="text-[#909191] leading-relaxed mt-4">Sigma is a progressive architectural practice providing high quality architectural and construction services for the domestic , industrial and commercial sectors. <br />
                         We are committed to providing appropriate, imaginative, cost-effective, and technical solutions to meet our client’s individual requirements.<br />

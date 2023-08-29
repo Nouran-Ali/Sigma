@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
     return (
         <div>
             <Navbar />
-            <div className='px-24'>
+            <div className='px-24 max-xl:px-16'>
                 {children}
             </div>
             <Steper />
