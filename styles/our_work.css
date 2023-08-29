@@ -57,6 +57,11 @@
     box-shadow: 0px 1px 12px #BDBDBD;
 }
 
+.ant-tabs-tab.ant-tabs-tab-active{
+    border-right: 2px solid #d1a916 !important;
+    z-index: 2;
+}
+
 .animation_ourwork {
     position: relative;
     animation: fade 1s;
@@ -116,3 +121,20 @@
         /* opacity: 0; */
     }
 }
+
+@media (max-width: 1280px) {
+    .images_ourwork {
+        position: relative;
+        top: 0px;
+    }
+    .images_ourwork_left , .images_ourwork_center{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .large_image_ourWork {
+        width: 250px !important;
+        height: 200px !important;
+    }
+    
+  }

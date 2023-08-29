@@ -45,7 +45,7 @@ const services = () => {
 
                     {
                         currentCardNumber == 0 ?
-                            <div className='bg-white rounded-[80px] h-80 max-xl:h-full p-5 relative' id='0'>
+                            <div className='bg-white rounded-[80px] h-80 max-xl:h-full p-5 max-xl:p-3 relative' id='0'>
                                 <img src='../construction.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
                                 <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
@@ -62,7 +62,7 @@ const services = () => {
 
                     {
                         currentCardNumber == 1 ?
-                            <div className='bg-white rounded-[80px] h-80 p-5 relative' id='1'>
+                            <div className='bg-white rounded-[80px] h-80 max-xl:h-full p-5 max-xl:p-3 relative' id='1'>
                                 <img src='../analysis.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
                                 <p className='text-base text-[#919191]'>Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs.</p>

@@ -33,8 +33,8 @@ const Construction = () => {
 
     return (
         <>
-            <div className='flex items-start'>
-                <div>
+            <div className='flex flex-col md:flex-row md:items-start'>
+                <div className='mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}
@@ -62,12 +62,12 @@ const Construction = () => {
                     />
                 </div>
 
-                <div className='ml-5'>
+                <div className='mb-5 md:mr-5 large_image_ourWork'>
                     <Image
                         width={300}
                         height={300}
                         src={src2}
-                        className='rounded-lg image_ourWork animation_ourwork_image'
+                        className='rounded-lg image_ourWork large_image_ourWork animation_ourwork_image'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -89,7 +89,7 @@ const Construction = () => {
                         }}
                     />
                 </div>
-                <div className='ml-5'>
+                <div className='mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}
@@ -118,8 +118,8 @@ const Construction = () => {
                 </div>
             </div>
 
-            <div className='flex self-start'>
-                <div className='images_ourwork'>
+            <div className='flex flex-col md:flex-row md:items-start'>
+                <div className='images_ourwork mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}
@@ -146,7 +146,7 @@ const Construction = () => {
                         }}
                     />
                 </div>
-                <div className='images_ourwork_left'>
+                <div className='images_ourwork_left mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}

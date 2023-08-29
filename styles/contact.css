@@ -87,7 +87,7 @@
 .circule_contact {
   background-color: white;
   width: 85%;
-  height: 95%;
+  height: 90%;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   box-shadow: 2px 2px 14px #cecece;
 }
@@ -125,5 +125,12 @@
   100% {
     left: 0px;
     opacity: 1;
+  }
+}
+
+@media (max-width: 1280px) {
+  .circule_contact {
+    width: 100%;
+    height: 100%;
   }
 }

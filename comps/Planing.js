@@ -35,8 +35,8 @@ const Planing = () => {
 
     return (
         <>
-            <div className='flex items-start'>
-                <div>
+            <div className='flex flex-col md:flex-row md:items-start'>
+                <div className='mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}
@@ -64,7 +64,7 @@ const Planing = () => {
                     />
                 </div>
 
-                <div className='ml-5'>
+                <div className='mb-5 md:mr-5'>
                     <Image
                         width={300}
                         height={300}
@@ -91,7 +91,7 @@ const Planing = () => {
                         }}
                     />
                 </div>
-                <div className='ml-5'>
+                <div className='mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}
@@ -120,8 +120,8 @@ const Planing = () => {
                 </div>
             </div>
 
-            <div className='flex self-start'>
-                <div className='images_ourwork'>
+            <div className='flex flex-col md:flex-row md:items-start'>
+                <div className='images_ourwork mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}
@@ -148,7 +148,7 @@ const Planing = () => {
                         }}
                     />
                 </div>
-                <div className='images_ourwork_center'>
+                <div className='images_ourwork_center mb-5 md:mr-5'>
                     <Image
                         width={300}
                         height={100}
@@ -175,7 +175,7 @@ const Planing = () => {
                         }}
                     />
                 </div>
-                <div className='images_ourwork_left'>
+                <div className='images_ourwork_left mb-5 md:mr-5'>
                     <Image
                         width={250}
                         height={200}
