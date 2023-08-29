@@ -43,6 +43,7 @@ const services = () => {
                             </div>
                     } */}
 
+
                     {
                         currentCardNumber == 0 ?
                             <div className='bg-white rounded-[80px] h-80 max-xl:h-full p-5 max-xl:p-3 relative' id='0'>
