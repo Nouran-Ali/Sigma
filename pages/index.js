@@ -32,7 +32,7 @@ export default function Home() {
           <div className={`absolute origin-center rotate-45 ${styles.background}`}></div>
           <img src='../waves.png' width="90px" className={`absolute top-5 right-32 h-[50px] ${styles.waves}`} />
           <img src='../close2.png' width="30px" className={`absolute top-44 right-16 ${styles.close}`} />
-          <img src='../home3.png' width="350px" className={` ${styles.architectural}`} />
+          <img src='../architectural.png' width="350px" className={` ${styles.architectural}`} />
         </div>
       </div>
     </div>

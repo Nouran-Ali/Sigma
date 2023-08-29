@@ -13,7 +13,7 @@
     margin-left: 70px;
 }
 
-/* .architectural {
+.architectural {
     position: relative;
     left: 50px;
     animation-name: example;
@@ -22,7 +22,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-} */
+}
 
 @keyframes example {
     0% {
