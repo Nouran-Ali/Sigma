@@ -9,9 +9,11 @@
 
 .architectural {
     transform: rotateY(-178deg);
+    margin-top: 80px;
+    margin-left: 70px;
 }
 
-.architectural {
+/* .architectural {
     position: relative;
     left: 50px;
     animation-name: example;
@@ -20,7 +22,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
+} */
 
 @keyframes example {
     0% {
@@ -70,4 +72,10 @@
 
 .steper{
     left:47.5%;
+}
+
+@media (max-width: 1280px) {
+    .background , .architectural , .waves , .close{
+        display: none;
+    }
 }

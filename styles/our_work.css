@@ -2,8 +2,8 @@
     color: #d1a916;
 }
 
-.ant-tabs-tab.ant-tabs-tab-active{
-    border-right:1px solid #d1a916 !important;
+.ant-tabs-tab.ant-tabs-tab-active {
+    border-right: 1px solid #d1a916 !important;
 }
 
 :where(.css-dev-only-do-not-override-byeoj0).ant-tabs .ant-tabs-tab:hover {
@@ -53,6 +53,66 @@
     left: 294px;
 }
 
-.image_ourWork{
+.image_ourWork {
     box-shadow: 0px 1px 12px #BDBDBD;
+}
+
+.animation_ourwork {
+    position: relative;
+    animation: fade 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade {
+    0% {
+        width: 200px;
+        height: 150px;
+        /* opacity: 10px; */
+    }
+
+    100% {
+        width: 250px;
+        height: 200px;
+        /* opacity: 0; */
+    }
+}
+
+.animation_ourwork_image {
+    position: relative;
+    animation: fade_image 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_image {
+    0% {
+        width: 250px;
+        height: 250px;
+        /* opacity: 10px; */
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        /* opacity: 0; */
+    }
+}
+
+.animation_ourwork_image_planing {
+    position: relative;
+    animation: fade_image_planing 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade_image_planing {
+    0% {
+        width: 250px;
+        height: 50px;
+        /* opacity: 10px; */
+    }
+
+    100% {
+        width: 300px;
+        height: 100px;
+        /* opacity: 0; */
+    }
 }

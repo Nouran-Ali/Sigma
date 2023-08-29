@@ -105,7 +105,7 @@ function Navbar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="black"
             >
               <MenuIcon />
             </IconButton>
@@ -150,9 +150,9 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            <img src='../logo.png' width="50px" />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, textAlign: 'center' }}>
             {pages.map(({ title, href }, index) => (
               <Link key={index} href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>{title}</Link>
             ))}
