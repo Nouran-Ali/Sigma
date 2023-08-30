@@ -26,8 +26,8 @@ const About = () => {
             <div className=''>
                 <div className={`bgAbout`}></div>
                 <div className="absolute left-12 top-52">
-                    <img src='../dots.png' width='50px' />
-                    <img src='../dots.png' width='50px' className="mt-[-5px]" />
+                    <img src='../dots.png' width='50px' className="d_none"/>
+                    <img src='../dots.png' width='50px' className="mt-[-5px] d_none" />
                 </div>
                 <div className="mt-20 max-xl:mt-7 max-xl:ml-5 animation">
                     <h1 className="text-4xl font-bold uppercase leading-relaxed title">About <span className="text-[#7a9595]">Sigma</span></h1>
