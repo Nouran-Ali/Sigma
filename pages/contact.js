@@ -5,7 +5,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='grid grid-cols-2 max-xl:grid-cols-1 gap-12 mt-7'>
+    <div className='grid grid-cols-2 max-xl:grid-cols-1 gap-12 mt-7 max-xl:flex max-xl:flex-wrap-reverse	'>
       <div className='animation_contact_left'>
         <Contact_form />
       </div>

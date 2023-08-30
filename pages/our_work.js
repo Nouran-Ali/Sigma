@@ -30,7 +30,7 @@ const OurWork = () => {
   };
 
   return (
-    <div className='mt-10'>
+    <div className='mt-10 flex'>
       <Tabs
         tabPosition={tabPosition}
         items={items}

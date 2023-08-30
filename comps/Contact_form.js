@@ -22,10 +22,10 @@ export const Contact_form = () => {
             <p className='text-base mt-3 text-[#7c7c7c]'>Lorem ipsum is placeholder text commonly used in the graphic, and publishing industries.</p>
             <form className='mt-4'>
                 <div className='grid grid-cols-2 gap-4'>
-                    <Input placeholder="First Name*" className='bg-[#f1f2f3]' />
-                    <Input placeholder="Last Name*" className='bg-[#f1f2f3]' />
-                    <Input placeholder="Enter Email*" className='bg-[#f1f2f3]' />
-                    <Input placeholder="Phone No." className='bg-[#f1f2f3]' />
+                    <Input placeholder="First Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
+                    <Input placeholder="Last Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
+                    <Input placeholder="Enter Email*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
+                    <Input placeholder="Phone No." className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
                 </div>
                 <TextArea
                     showCount
@@ -33,6 +33,9 @@ export const Contact_form = () => {
                     style={{
                         height: 120,
                         resize: 'none',
+                        backgroundColor: "#f1f2f3",
+                        border: "1px solid #dddddd",
+                        boxShadow: "0 0 2px 1px #dddddd"
                     }}
                     onChange={onChange}
                     placeholder="Message here..."

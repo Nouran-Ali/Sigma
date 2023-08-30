@@ -76,7 +76,7 @@ function Navbar() {
 
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }} className='navbar'>
+    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' ,borderBottom: "1px solid #283c3a1c" }} className='navbar'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -141,6 +141,7 @@ function Navbar() {
             href="/"
             sx={{
               mr: 2,
+              ml: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
