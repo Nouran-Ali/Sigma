@@ -128,8 +128,8 @@
 
 @media (max-width: 1280px) {
   .circule_contact {
-    width: 120%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
   }
   .bg_contact {
     width: 410px;

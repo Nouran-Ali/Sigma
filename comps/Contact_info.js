@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const Contact_info = () => {
     return (
         <>
-            <div className='flex items-center relative mt-10 max-xl:mt-0 ml-10 max-xl:ml-0 max-xl:py-8 max-xl:px-5 circule_contact'>
+            <div className='flex items-center relative mt-10 max-xl:mt-0 ml-10 max-xl:ml-0 max-xl:mr-10 max-xl:py-8 max-xl:px-5 circule_contact'>
                 {/* <div className='circule_one'></div>
                 <div className='circule_center'></div>
                 <div className='circule_two'></div> */}
