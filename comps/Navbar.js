@@ -76,7 +76,7 @@ function Navbar() {
 
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' ,borderBottom: "1px solid #283c3a1c" }} className='navbar'>
+    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' ,borderBottom: "1px solid #283c3a1c", width: "100%" }} className='navbar pr-3'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -140,8 +140,8 @@ function Navbar() {
             component="a"
             href="/"
             sx={{
-              mr: 2,
-              ml: 2,
+              // mr: 2,
+              // ml: "auto",
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
@@ -149,6 +149,7 @@ function Navbar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              justifyContent: "end",
             }}
           >
             <img src='../logo.png' width="50px" />
