@@ -64,12 +64,12 @@ const Planing = () => {
                     />
                 </div>
 
-                <div className='mb-5 md:mr-5'>
+                <div className='mb-5 md:mr-5 large_image_ourWork'>
                     <Image
                         width={300}
                         height={300}
                         src={src2}
-                        className='rounded-lg image_ourWork animation_ourwork_image'
+                        className='rounded-lg image_ourWork large_image_ourWork animation_ourwork_image'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -148,12 +148,12 @@ const Planing = () => {
                         }}
                     />
                 </div>
-                <div className='images_ourwork_center mb-5 md:mr-5'>
+                <div className='images_ourwork_center mb-5 md:mr-5 large_image_ourWork_2'>
                     <Image
                         width={300}
                         height={100}
                         src={src6}
-                        className='rounded-lg image_ourWork animation_ourwork_image_planing'
+                        className='rounded-lg image_ourWork large_image_ourWork_2 animation_ourwork_image_planing'
                         preview={{
                             toolbarRender: (
                                 _,

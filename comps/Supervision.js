@@ -62,7 +62,7 @@ const Construction = () => {
                     />
                 </div>
 
-                <div className='mb-5 md:mr-5 large_image_ourWork'>
+                <div className='mb-5 md:mr-5 large_image_ourWork '>
                     <Image
                         width={300}
                         height={300}

@@ -1,5 +1,5 @@
 :where(.css-dev-only-do-not-override-byeoj0).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: #d1a916;
+    color: #d1a916 !important;
 }
 
 .ant-tabs-tab.ant-tabs-tab-active {
@@ -7,7 +7,7 @@
 }
 
 :where(.css-dev-only-do-not-override-byeoj0).ant-tabs .ant-tabs-tab:hover {
-    color: #d1a916;
+    color: #d1a916 !important;
 }
 
 .toolbar-wrapper {
@@ -135,6 +135,10 @@
     .large_image_ourWork {
         width: 250px !important;
         height: 200px !important;
+    }
+    .large_image_ourWork_2 {
+        width: 250px !important;
+        height: 80px !important;
     }
     
   }

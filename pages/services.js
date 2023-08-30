@@ -18,7 +18,7 @@ const services = () => {
         <div className='2xl:flex mt-9'>
             <div className={`2xl:absolute top-28 ${styles.animation}`}>
                 <p className='text-[#d1a916] font-semibold text-2xl'>Services</p>
-                <h1 className='font-bold text-4xl text-[#304644] mt-3'>Sigma Architectural<br /> Contracting</h1>
+                <h1 className='font-bold text-4xl max-lg:text-2xl text-[#304644] mt-3'>Sigma Architectural<br /> Contracting</h1>
             </div>
             <div className='bg-[#e8e8e8] rounded-[80px] w-9/12 max-xl:w-full h-80 max-xl:h-full pl-20 max-xl:pl-5 p-10 max-xl:p-5 ml-auto max-xl:ml-0 2xl:mr-5 max-xl:mt-60'>
                 <h3 className={`absolute left-80 top-64 font-bold -rotate-90 text-5xl text-white opacity-25 ${styles.d_none}`}>Services</h3>
@@ -46,7 +46,7 @@ const services = () => {
 
                     {
                         currentCardNumber == 0 ?
-                            <div className='bg-white rounded-[80px] h-80 max-xl:h-96 p-5 max-xl:p-3 relative' id='0'>
+                            <div className='bg-white rounded-[80px] h-80 max-xl:h-88 p-5 max-xl:p-3 relative' id='0'>
                                 <img src='../construction.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
                                 <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
@@ -55,7 +55,7 @@ const services = () => {
                                 </div>
                             </div>
                             :
-                            <div className='rounded-[80px] h-80 p-5'>
+                            <div className='rounded-[80px] h-80 max-xl:h-28 p-5'>
                                 <img src='../construction.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
                             </div>
@@ -63,7 +63,7 @@ const services = () => {
 
                     {
                         currentCardNumber == 1 ?
-                            <div className='bg-white rounded-[80px] h-80 max-xl:h-96 p-5 max-xl:p-3 relative' id='1'>
+                            <div className='bg-white rounded-[80px] h-80 max-xl:h-88 p-5 max-xl:p-3 relative' id='1'>
                                 <img src='../analysis.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
                                 <p className='text-base text-[#919191]'>Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs.</p>
@@ -72,7 +72,7 @@ const services = () => {
                                 </div>
                             </div>
                             :
-                            <div className='rounded-[80px] h-80 p-5'>
+                            <div className='rounded-[80px] h-80 max-xl:h-36 p-5'>
                                 <img src='../analysis.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
                             </div>
