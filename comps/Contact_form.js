@@ -21,7 +21,7 @@ export const Contact_form = () => {
             <h1 className='text-2xl font-semibold text-[#304644] title_contact'>Connect With Us</h1>
             <p className='text-base mt-3 text-[#7c7c7c]'>Lorem ipsum is placeholder text commonly used in the graphic, and publishing industries.</p>
             <form className='mt-4'>
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='grid grid-cols-2 max-lg:grid-cols-1 gap-4'>
                     <Input placeholder="First Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
                     <Input placeholder="Last Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
                     <Input placeholder="Enter Email*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
