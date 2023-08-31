@@ -18,12 +18,12 @@ export default function Home() {
           <div className={`${styles.animation} pr-3`}>
             <h1 className='text-4xl max-lg:text-xl font-bold uppercase leading-relaxed'><span className='text-[#7a9595]'>Sigma</span> <br /> <span className=''>Architectural Contracting</span></h1>
             <p className='text-[#909191] leading-relaxed mt-4 w-96'>Sigma is a progressive architectural practice providing high-quality architectural and construction services for the domestic, industrial, and commercial sectors.</p>
-            <Button shape="round" size="large" className='mt-7' style={{backgroundColor: "#384e4c10" , color: "#7a9595" , border: "1px solid #384e4c3b" , width: "150px" , borderRadius: "20px" , paddingLeft: "20px", paddingBottom: "30px"}} onClick={()=> pathname == '/about'}>
+            <button className='mt-7' style={{backgroundColor: "#384e4c10" , color: "#7a9595" , border: "1px solid #384e4c3b" , width: "150px" , borderRadius: "20px" , paddingLeft: "20px", paddingBottom: "10px" , paddingTop: "10px"}} onClick={()=> pathname == '/about'}>
               <div className='flex content-center'>
                 Read more
                 <img src='../star.png' width='25px' height="10px" className={`ml-3`}/>
               </div>
-            </Button>
+            </button>
           </div>
           <img src='../wave2.png' width="90px" className={`absolute top-3/4 left-10 mt-16`} />
           <img src='../close.png' width="30px" className={`absolute top-80 start-1/2 ${styles.close}`} />

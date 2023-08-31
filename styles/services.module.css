@@ -61,4 +61,15 @@
     .d_none , .stars , .animation3 , .close{
         display: none;
     }
+    @keyframes fade-left {
+        0% {
+            left: 0px;
+            opacity: 0;
+        }
+    
+        100% {
+            left: 40px;
+            opacity: 1;
+        }
+    }
 }

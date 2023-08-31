@@ -136,9 +136,9 @@
         width: 250px !important;
         height: 200px !important;
     }
-    .large_image_ourWork_2 {
-        width: 250px !important;
-        height: 80px !important;
+    .image_ourWork.large_image_ourWork_2 {
+        width: 250px;
+        height: 80px;
     }
     
   }

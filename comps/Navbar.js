@@ -98,7 +98,7 @@ function Navbar() {
             <img src='../logo.png' width="50px" />
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} className="ml-7">
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} className="ml-5">
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -149,7 +149,7 @@ function Navbar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-              justifyContent: "end",
+              justifyContent: 'flex-end',
             }}
           >
             <img src='../logo.png' width="50px" />

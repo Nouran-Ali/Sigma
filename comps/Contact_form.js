@@ -39,7 +39,7 @@ export const Contact_form = () => {
                     }}
                     onChange={onChange}
                     placeholder="Message here..."
-                    className='bg-[#f1f2f3] mt-3'
+                    className='bg-[#f1f2f3] custom-textarea mt-3'
                 />
                 <Button className='mt-5 font-semibold w-full h-10 submit_button'>Send Now</Button>
             </form>
