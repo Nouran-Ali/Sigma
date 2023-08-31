@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className='home_page'>
       <div className='grid grid-cols-2 gap-4 '>
-        <img src='../circle.png' width="100px" className={`absolute top-36 left-16 z-[-1]`} />
+        <img src='../circle.png' width="100px" className={`absolute top-36 left-16 max-lg:left-2 z-[-1]`} />
         <div className='mt-28'>
           <div className={`${styles.animation} pr-3`}>
             <h1 className='text-4xl max-lg:text-xl font-bold uppercase leading-relaxed'><span className='text-[#7a9595]'>Sigma</span> <br /> <span className=''>Architectural Contracting</span></h1>
