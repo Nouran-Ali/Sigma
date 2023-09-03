@@ -2,6 +2,10 @@
     color: #d1a916 !important;
 }
 
+.custom-tab-bar .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #d1a916 !important;
+}
+
 .ant-tabs-tab.ant-tabs-tab-active {
     border-right: 1px solid #d1a916 !important;
 }
@@ -57,7 +61,7 @@
     box-shadow: 0px 1px 12px #BDBDBD;
 }
 
-.ant-tabs-tab.ant-tabs-tab-active{
+.ant-tabs-tab.ant-tabs-tab-active {
     border-right: 2px solid #d1a916 !important;
     z-index: 2;
 }
@@ -127,18 +131,22 @@
         position: relative;
         top: 0px;
     }
-    .images_ourwork_left , .images_ourwork_center{
+
+    .images_ourwork_left,
+    .images_ourwork_center {
         position: relative;
         top: 0px;
         left: 0px;
     }
+
     .large_image_ourWork {
         width: 250px !important;
         height: 200px !important;
     }
+
     .image_ourWork.large_image_ourWork_2 {
         width: 250px;
         height: 80px;
     }
-    
-  }
+
+}

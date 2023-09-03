@@ -35,6 +35,7 @@ const OurWork = () => {
         tabPosition={tabPosition}
         items={items}
         defaultActiveKey="1"
+        className="custom-tab-bar"
       />
     </div>
   )
