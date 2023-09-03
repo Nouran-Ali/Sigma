@@ -17,7 +17,7 @@ export default function Home() {
         <div className='mt-28'>
           <div className={`${styles.animation} pr-3`}>
             <h1 className='text-4xl max-lg:text-xl font-bold uppercase leading-relaxed'><span className='text-[#7a9595]'>Sigma</span> <br /> <span className=''>Architectural Contracting</span></h1>
-            <p className='text-[#909191] leading-relaxed mt-4 w-96'>Sigma is a progressive architectural practice providing high-quality architectural and construction services for the domestic, industrial, and commercial sectors.</p>
+            <p className='text-[#909191] leading-relaxed mt-4 w-96 max-md:w-full'>Sigma is a progressive architectural practice providing high-quality architectural and construction services for the domestic, industrial, and commercial sectors.</p>
             <button className='mt-7' style={{backgroundColor: "#384e4c10" , color: "#7a9595" , border: "1px solid #384e4c3b" , width: "150px" , borderRadius: "20px" , paddingLeft: "20px", paddingBottom: "10px" , paddingTop: "10px"}} onClick={()=> pathname == '/about'}>
               <div className='flex content-center'>
                 Read more

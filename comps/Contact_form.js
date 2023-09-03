@@ -22,16 +22,17 @@ export const Contact_form = () => {
             <p className='text-base mt-3 text-[#7c7c7c]'>Lorem ipsum is placeholder text commonly used in the graphic, and publishing industries.</p>
             <form className='mt-4'>
                 <div className='grid grid-cols-2 max-lg:grid-cols-1 gap-4'>
-                    <Input placeholder="First Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
-                    <Input placeholder="Last Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
-                    <Input placeholder="Enter Email*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
-                    <Input placeholder="Phone No." className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
+                    <Input size="large" placeholder="First Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
+                    <Input size="large" placeholder="Last Name*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
+                    <Input size="large" placeholder="Enter Email*" className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
+                    <Input size="large" placeholder="Phone No." className='bg-[#f1f2f3]' style={{ backgroundColor: "#f1f2f3", border: "1px solid #dddddd", boxShadow: "0 0 2px 1px #dddddd" }} />
                 </div>
                 <TextArea
                     showCount
                     maxLength={100}
+                    size="large"
                     style={{
-                        height: 120,
+                        height: 100,
                         resize: 'none',
                         backgroundColor: "#f1f2f3",
                         border: "1px solid #dddddd",

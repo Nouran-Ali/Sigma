@@ -29,7 +29,7 @@ const About = () => {
                     <img src='../dots.png' width='50px' className="d_none"/>
                     <img src='../dots.png' width='50px' className="mt-[-5px] d_none" />
                 </div>
-                <div className="mt-20 max-xl:mt-7 max-xl:ml-5 animation">
+                <div className="mt-20 max-xl:mt-7 max-xl:ml-5 animation max-xl:mb-7">
                     <h1 className="text-4xl font-bold uppercase leading-relaxed title">About <span className="text-[#7a9595]">Sigma</span></h1>
                     <p className="text-[#909191] leading-relaxed mt-4">Sigma is a progressive architectural practice providing high quality architectural and construction services for the domestic , industrial and commercial sectors. <br />
                         We are committed to providing appropriate, imaginative, cost-effective, and technical solutions to meet our client’s individual requirements.<br />
