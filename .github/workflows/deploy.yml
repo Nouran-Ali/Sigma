@@ -21,7 +21,7 @@ jobs:
           ssh-keygen -p -P "$(cat passphrase.txt)" -N "" -f private_key.txt
 
       - name: SSH into VPS and deploy
-        uses: appleboy/ssh-action@main
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
