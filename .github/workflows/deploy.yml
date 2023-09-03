@@ -20,8 +20,8 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ~/my-nextjs-app
+            cd ~/var/www/sigma
             git pull origin main
             npm install
             npm run build
-            pm2 restart my-nextjs-app # If you use PM2 for process management
+            pm2 restart sigma # If you use PM2 for process management
