@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { Radio, Space, Tabs } from 'antd';
-import Supervision from '@/comps/Supervision';
-import Construction from '@/comps/Construction';
-import Planing from '@/comps/Planing';
 import All_projects from '@/comps/All_projects';
+import Interior_finishing from '@/comps/Interior_finishing';
 
 const OurWork = () => {
 
@@ -16,7 +14,7 @@ const OurWork = () => {
     {
       key: '2',
       label: 'INTERIOR FINISHING',
-      children: <Construction />,
+      children: <Interior_finishing />,
     },
   ];
 

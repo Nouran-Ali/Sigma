@@ -51,7 +51,7 @@ const services = () => {
                                 <img src='../Supervision.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Supervision</h2>
                                 <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
-                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916]' onClick={handleNextCard}>
+                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916] cursor-pointer' onClick={handleNextCard}>
                                     <ArrowRightOutlined />
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ const services = () => {
                                 <img src='../construction.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
                                 <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
-                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916]' onClick={handleNextCard}>
+                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916] cursor-pointer' onClick={handleNextCard}>
                                     <ArrowRightOutlined />
                                 </div>
                             </div>
@@ -85,7 +85,7 @@ const services = () => {
                                 <img src='../analysis.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
                                 <p className='text-base text-[#919191]'>Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs.</p>
-                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916]' onClick={handleNextCard}>
+                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916] cursor-pointer' onClick={handleNextCard}>
                                     <ArrowRightOutlined />
                                 </div>
                             </div>
