@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
 
           script: |
-            cd ~/var/www/sigma
+            cd /var/www/sigma
             git pull origin main
             npm install
             npm run build
