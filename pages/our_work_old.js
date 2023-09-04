@@ -3,20 +3,24 @@ import { Radio, Space, Tabs } from 'antd';
 import Supervision from '@/comps/Supervision';
 import Construction from '@/comps/Construction';
 import Planing from '@/comps/Planing';
-import All_projects from '@/comps/All_projects';
 
 const OurWork = () => {
 
   const items = [
     {
       key: '1',
-      label: 'PROJECTS',
-      children: <All_projects />,
+      label: 'SUPERVISION',
+      children: <Supervision />,
     },
     {
       key: '2',
-      label: 'INTERIOR FINISHING',
+      label: 'CONSTRUCTION',
       children: <Construction />,
+    },
+    {
+      key: '3',
+      label: 'PLANING',
+      children: <Planing />,
     },
   ];
 

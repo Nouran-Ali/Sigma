@@ -7,9 +7,10 @@ const services = () => {
     const [currentCardNumber, setCurrentCardNumber] = useState(0)
 
     const handleNextCard = () => {
-        if (currentCardNumber == 1) {
+        if (currentCardNumber == 2) {
             setCurrentCardNumber(0)
-        } else {
+        }
+        else {
             setCurrentCardNumber(currentCardNumber + 1)
         }
     }
@@ -47,6 +48,23 @@ const services = () => {
                     {
                         currentCardNumber == 0 ?
                             <div className='bg-white rounded-[80px] h-80 max-xl:h-88 p-5 max-xl:p-3 relative' id='0'>
+                                <img src='../Supervision.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Supervision</h2>
+                                <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
+                                <div className='absolute bottom-7 right-10 pb-3 pt-1 px-3 rounded-full bg-[#304644] text-[#d1a916]' onClick={handleNextCard}>
+                                    <ArrowRightOutlined />
+                                </div>
+                            </div>
+                            :
+                            <div className='rounded-[80px] h-80 max-xl:h-28 p-5'>
+                                <img src='../Supervision.png' width="50px" className='mx-auto' />
+                                <h2 className='font-semibold mt-3 mb-3'>Supervision</h2>
+                            </div>
+                    }
+
+                    {
+                        currentCardNumber == 1 ?
+                            <div className='bg-white rounded-[80px] h-80 max-xl:h-88 p-5 max-xl:p-3 relative' id='0'>
                                 <img src='../construction.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Construction</h2>
                                 <p className='text-base text-[#919191]'>Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.</p>
@@ -62,7 +80,7 @@ const services = () => {
                     }
 
                     {
-                        currentCardNumber == 1 ?
+                        currentCardNumber == 2 ?
                             <div className='bg-white rounded-[80px] h-80 max-xl:h-88 p-5 max-xl:p-3 relative' id='1'>
                                 <img src='../analysis.png' width="50px" className='mx-auto' />
                                 <h2 className='font-semibold mt-3 mb-3'>Engineering Services</h2>
