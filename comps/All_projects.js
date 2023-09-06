@@ -16,7 +16,7 @@ const All_projects = () => {
 
                 <Project
                     title="Bridal showers"
-                    href="/"
+                    href="/bridal_showers"
                     icon="/../bathing.png"
                     background={styles.bgProjectTwo}
                     paragragh="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries."
@@ -25,7 +25,7 @@ const All_projects = () => {
 
                 <Project
                     title="Private sports club"
-                    href="/"
+                    href="/private_sports_club"
                     icon="/../treadmill.png"
                     background={styles.bgProjectThree}
                     paragragh="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries."
@@ -33,7 +33,7 @@ const All_projects = () => {
                 />
                 <Project
                     title="Structure stage"
-                    href="/"
+                    href="/structure_stage"
                     icon="/../concrete.png"
                     background={styles.bgProjectFour}
                     paragragh="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries."
