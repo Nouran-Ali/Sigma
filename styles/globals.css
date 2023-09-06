@@ -25,7 +25,21 @@
 
 body {
   background-color: #f1f2f3;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 9px; /* Width of the scroll bar */
+  background-color: #f1f1f1; /* Background color of the track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #304644; /* Color of the thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #d1d1d1; /* Color of the track */
 }
 
 .home_page :where(.css-dev-only-do-not-override-byeoj0).ant-btn.ant-btn-round.ant-btn-lg {
