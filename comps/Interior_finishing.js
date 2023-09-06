@@ -12,6 +12,8 @@ const src2 = '/../Interior_finishing/1.jpeg';
 const src3 = '/../Interior_finishing/4.jpeg';
 const src4 = '/../Interior_finishing/10.jpeg';
 const src5 = '/../Interior_finishing/7.jpeg';
+const src6 = '/../Interior_finishing/15.jpeg';
+const src7 = '/../Interior_finishing/6.jpeg';
 
 const Interior_finishing = () => {
 
@@ -172,6 +174,61 @@ const Interior_finishing = () => {
                         }}
                     />
                 </div>
+
+                {/* <div className='images_ourwork_center mb-5 md:mr-5 large_image_ourWork_2'>
+                    <Image
+                        width={300}
+                        height={320}
+                        src={src6}
+                        className='rounded-lg image_ourWork large_image_ourWork_2 animation_ourwork_image_planing'
+                        preview={{
+                            toolbarRender: (
+                                _,
+                                {
+                                    transform: { scale },
+                                    actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
+                                },
+                            ) => (
+                                <Space size={12} className="toolbar-wrapper">
+                                    <DownloadOutlined onClick={onDownload} />
+                                    <SwapOutlined rotate={90} onClick={onFlipY} />
+                                    <SwapOutlined onClick={onFlipX} />
+                                    <RotateLeftOutlined onClick={onRotateLeft} />
+                                    <RotateRightOutlined onClick={onRotateRight} />
+                                    <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
+                                    <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
+                                </Space>
+                            ),
+                        }}
+                    />
+                </div>
+                <div className='images_ourwork_left_two mb-5 md:mr-5'>
+                    <Image
+                        width={250}
+                        height={200}
+                        src={src7}
+                        className='rounded-lg image_ourWork animation_ourwork'
+                        preview={{
+                            toolbarRender: (
+                                _,
+                                {
+                                    transform: { scale },
+                                    actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
+                                },
+                            ) => (
+                                <Space size={12} className="toolbar-wrapper">
+                                    <DownloadOutlined onClick={onDownload} />
+                                    <SwapOutlined rotate={90} onClick={onFlipY} />
+                                    <SwapOutlined onClick={onFlipX} />
+                                    <RotateLeftOutlined onClick={onRotateLeft} />
+                                    <RotateRightOutlined onClick={onRotateRight} />
+                                    <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
+                                    <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
+                                </Space>
+                            ),
+                        }}
+                    />
+                </div> */}
             </div>
         </>
     )

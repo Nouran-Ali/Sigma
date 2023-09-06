@@ -33,10 +33,10 @@ const Wedding_hall = () => {
       />
       <div className='mb-7'>
         <Image
-          width={1160}
-          height={400}
+          width={"100%"}
+          height={"100%"}
           src={"/wedding_hall/8.jpeg"}
-          className='rounded-lg'
+          className='rounded-lg max-xl:w-full'
           preview={{
             toolbarRender: (
               _,
@@ -108,7 +108,7 @@ const Wedding_hall = () => {
             <p>Bibend auctor nisi elit</p>
           </div>
           <p className='mt-4 text-[#677289]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 text-lg bg-[#d1a916]'>
+          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-2/3 text-lg bg-[#d1a916]'>
             Contact us
             <ArrowRightOutlined className='ml-2' />
           </Link>
@@ -221,7 +221,7 @@ const Wedding_hall = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 flex items-center mt-8 mb-14'>
+      <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 flex max-xl:flex-wrap-reverse items-center mt-8 mb-14'>
         <div className={`grid grid-cols-2 gap-4 flex items-center ${styles.bg_wedding}`}>
           <div className='rounded-lg mt-5 mb-5'>
             <Image
@@ -345,7 +345,7 @@ const Wedding_hall = () => {
             <p>Bibend auctor nisi elit</p>
           </div>
           <p className='mt-4 text-[#677289]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 text-lg bg-[#d1a916]'>
+          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-2/3 text-lg bg-[#d1a916]'>
             Contact us
             <ArrowRightOutlined className='ml-2' />
           </Link>

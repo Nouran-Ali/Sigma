@@ -76,7 +76,7 @@ function Navbar() {
 
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' ,borderBottom: "1px solid #283c3a1c", width: "100%" }} className='navbar pr-3'>
+    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none', borderBottom: "1px solid #283c3a1c", width: "100%" }} className='navbar pr-3'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -132,6 +132,7 @@ function Navbar() {
                   <Link href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>{title}</Link>
                 </MenuItem>
               ))}
+              
             </Menu>
           </Box>
           <Typography
