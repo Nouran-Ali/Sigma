@@ -108,7 +108,7 @@ const Private_sports_club = () => {
             <p>Bibend auctor nisi elit</p>
           </div>
           <p className='mt-4 text-[#677289]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-2/3 text-lg bg-[#d1a916]'>
+          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-full text-lg bg-[#d1a916]'>
             Contact us
             <ArrowRightOutlined className='ml-2' />
           </Link>
@@ -345,7 +345,7 @@ const Private_sports_club = () => {
             <p>Bibend auctor nisi elit</p>
           </div>
           <p className='mt-4 text-[#677289]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-2/3 text-lg bg-[#d1a916]'>
+          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-full text-lg bg-[#d1a916]'>
             Contact us
             <ArrowRightOutlined className='ml-2' />
           </Link>

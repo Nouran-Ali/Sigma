@@ -29,29 +29,127 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 9px; /* Width of the scroll bar */
-  background-color: #f1f1f1; /* Background color of the track */
+  width: 9px;
+  /* Width of the scroll bar */
+  background-color: #f1f1f1;
+  /* Background color of the track */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #304644; /* Color of the thumb */
-  border-radius: 6px; /* Rounded corners for the thumb */
+  background-color: #304644;
+  /* Color of the thumb */
+  border-radius: 6px;
+  /* Rounded corners for the thumb */
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #d1d1d1; /* Color of the track */
+  background-color: #d1d1d1;
+  /* Color of the track */
 }
 
 .home_page :where(.css-dev-only-do-not-override-byeoj0).ant-btn.ant-btn-round.ant-btn-lg {
   box-shadow: none;
 }
 
-@media (max-width: 1280px) {
-  .d_none{
-      display: none;
+/* loading */
+
+.wrapper {
+  width: 200px;
+  height: 60px;
+  position: relative;
+  left: 43%;
+  margin-top: 248px;
+  z-index: 1;
+}
+
+.circle_loading {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #304644;
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle7124 .5s alternate infinite ease;
+}
+
+@keyframes circle7124 {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
   }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.circle_loading:nth-child(2) {
+  left: 45%;
+  animation-delay: .2s;
+}
+
+.circle_loading:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+.shadows {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 62px;
+  transform-origin: 50%;
+  z-index: -1;
+  left: 15%;
+  filter: blur(1px);
+  animation: shadow046 .5s alternate infinite ease;
+}
+
+@keyframes shadow046 {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scaleX(.2);
+    opacity: .4;
+  }
+}
+
+.shadows:nth-child(4) {
+  left: 45%;
+  animation-delay: .2s
+}
+
+.shadows:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+@media (max-width: 1280px) {
+  .d_none {
+    display: none;
+  }
+
   body {
     overflow-y: scroll;
   }
-  
 }

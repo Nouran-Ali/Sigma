@@ -41,6 +41,7 @@ const pages = [
 ];
 
 function Navbar() {
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -73,7 +74,6 @@ function Navbar() {
       return false;
     }
   }
-
 
   return (
     <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none', borderBottom: "1px solid #283c3a1c", width: "100%" }} className='navbar pr-3'>

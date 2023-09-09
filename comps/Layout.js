@@ -16,7 +16,16 @@ const Layout = ({ children }) => {
     return (
         <div>
             {loading ? (
-                <div className='flex flex-col justify-center items-center'>Loading...</div>
+                <>
+                    <div class="wrapper">
+                        <div class="circle_loading"></div>
+                        <div class="circle_loading"></div>
+                        <div class="circle_loading"></div>
+                        <div class="shadows"></div>
+                        <div class="shadows"></div>
+                        <div class="shadows"></div>
+                    </div>
+                </>
             ) : (
                 <>
                     <Navbar />

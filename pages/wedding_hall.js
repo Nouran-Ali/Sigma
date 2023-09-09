@@ -20,7 +20,7 @@ const Wedding_hall = () => {
   return (
     <div>
       <Breadcrumb
-        className='mt-7 mb-5'
+        className='mt-7 mb-5 text-sm'
         items={[
           {
             href: '/our_work',
@@ -108,12 +108,12 @@ const Wedding_hall = () => {
             <p>Bibend auctor nisi elit</p>
           </div>
           <p className='mt-4 text-[#677289]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-2/3 text-lg bg-[#d1a916]'>
+          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-full text-lg bg-[#d1a916]'>
             Contact us
             <ArrowRightOutlined className='ml-2' />
           </Link>
         </div>
-        <div className={`grid grid-cols-2 gap-4 flex items-center ${styles.bg_wedding}`}>
+        <div className={`grid grid-cols-2 max-lg:grid-cols-1 gap-4 flex items-center ${styles.bg_wedding}`}>
           <div className='rounded-lg mt-5 mb-5'>
             <Image
               width={300}
@@ -140,7 +140,7 @@ const Wedding_hall = () => {
               }}
             />
           </div>
-          <div className='rounded-lg mb-7 flex justify-end'>
+          <div className='rounded-lg mb-7 flex justify-end image_wedding max-lg:justify-start'>
             <Image
               width={200}
               height={150}
@@ -192,7 +192,7 @@ const Wedding_hall = () => {
               }}
             />
           </div>
-          <div className='rounded-lg mb-7 flex justify-end'>
+          <div className='rounded-lg mb-7 flex justify-end max-lg:justify-start'>
             <Image
               width={300}
               height={200}
@@ -345,7 +345,7 @@ const Wedding_hall = () => {
             <p>Bibend auctor nisi elit</p>
           </div>
           <p className='mt-4 text-[#677289]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-2/3 text-lg bg-[#d1a916]'>
+          <Link href="/contact" className='flex items-center mt-5 p-4 px-9 rounded-lg w-1/3 max-lg:w-full text-lg bg-[#d1a916]'>
             Contact us
             <ArrowRightOutlined className='ml-2' />
           </Link>
