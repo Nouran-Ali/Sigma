@@ -3,6 +3,11 @@
     right: 95px;
 }
 
+.stars_ar {
+    top: 104px;
+    left: 95px;
+}
+
 .animation {
     position: absolute;
     animation: fade-left 1s;
@@ -17,6 +22,24 @@
 
     100% {
         left: 95px;
+        opacity: 1;
+    }
+}
+
+.animation_ar{
+    position: absolute;
+    animation: fade-left-ar 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade-left-ar {
+    0% {
+        right: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 95px;
         opacity: 1;
     }
 }

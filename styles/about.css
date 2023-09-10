@@ -54,6 +54,18 @@
   z-index: -1;
 }
 
+.bgAbout_ar {
+  background-image: url('../public/bgAbout.png');
+  background-size: cover;
+  width: 729px;
+  height: 571px;
+  transform: rotate(-513deg);
+  position: absolute;
+  top: -97px;
+  right: -349px;
+  z-index: -1;
+}
+
 .title::after {
   width: 10%;
   margin-top: 5px;
@@ -89,7 +101,7 @@
     display: none;
   }
 
-  .bgAbout {
+  .bgAbout , .bgAbout_ar {
     width: 590px;
     height: 384px;
   }

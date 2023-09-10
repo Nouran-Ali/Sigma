@@ -4,6 +4,8 @@ import '@/styles/our_work.css';
 import '@/styles/contact.css';
 import { Head } from "next/document";
 import Layout from "./../comps/Layout";
+import { useTranslation } from "react-i18next";
+import { i18n } from "../comps/i18n";
 
 export default function App({ Component, pageProps }) {
   return <>

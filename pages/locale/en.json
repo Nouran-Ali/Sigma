@@ -1,6 +1,25 @@
 {
-    "navbar": {
-      "home": "Home",
-      "about": "About"
-    }
+  "SIGMA": "SIGMA",
+  "ARCHITECTURAL_CONTRACTING": "ARCHITECTURAL CONTRACTING",
+  "home": {
+    "paragragh": "Sigma is a progressive architectural practice providing high-quality architectural and construction services for the domestic, industrial, and commercial sectors.",
+    "read_more": "Read more"
+  },
+  "About": {
+    "About": "About",
+    "paragragh": "Sigma is a progressive architectural practice providing high quality architectural and construction services for the domestic , industrial and commercial sectors.",
+    "paragragh2": "We are committed to providing appropriate, imaginative, cost-effective, and technical solutions to meet our client’s individual requirements.",
+    "paragragh3": " We implement and manage our input into each project to the highest professional standards, meeting with our clients requirements with clear communication throughout the project."
+  },
+  "Services": {
+    "Services": "Services",
+    "Sigma_Architectural": "Sigma Architectural",
+    "Contracting": "Contracting",
+    "Supervision": "Supervision",
+    "card_one": "Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.",
+    "Construction": "Construction",
+    "card_two": "Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.",
+    "Engineering_Services": "Engineering Services",
+    "card_three": "Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs."
+  }
 }

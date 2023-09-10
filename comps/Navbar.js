@@ -16,26 +16,33 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { useRouter } from 'next/router';
 import styles from "../styles/navbar.module.css";
 import Link from 'next/link';
+import { useTranslation } from "react-i18next";
+import i18next from 'i18next';
 
 const pages = [
   {
     title: 'Home',
+    title_ar: 'الرئيسيه',
     href: '/',
   },
   {
     title: 'About us',
+    title_ar: 'عنا',
     href: '/about',
   },
   {
     title: 'Services',
+    title_ar: 'خدماتنا',
     href: '/services',
   },
   {
     title: 'Our work',
+    title_ar: 'اعمالنا',
     href: '/our_work',
   },
   {
     title: 'Contact',
+    title_ar: "تواصل معنا",
     href: '/contact',
   },
 ];
@@ -65,6 +72,10 @@ function Navbar() {
 
   const { pathname } = router;
 
+  const [t, i18n] = useTranslation();
+  // const { language, changeLanguage } = i18n;
+  const { language } = i18n;
+
   const handleActiveLink = (href) => {
     if (pathname == '/' && href == '/') {
       return true;
@@ -75,8 +86,29 @@ function Navbar() {
     }
   }
 
+  const changeLanguage = (language) => {
+    i18next.changeLanguage(language, (err, t) => {
+      if (err) return console.log('something went wrong loading', err);
+    });
+  };
+
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    changeLanguage(selectedLanguage);
+    localStorage.setItem('selectedLanguage', selectedLanguage);
+  };
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    if (storedLanguage) {
+      changeLanguage(storedLanguage);
+    } else {
+      changeLanguage(navigator.language);
+    }
+  }, []);
+
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none', borderBottom: "1px solid #283c3a1c", width: "100%" }} className='navbar pr-3'>
+    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none', borderBottom: "1px solid #283c3a1c", width: "100%" }} className='navbar pr-3' dir={language == "ar" ? "rtl" : "ltr"}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -84,16 +116,30 @@ function Navbar() {
             noWrap
             component="a"
             href="/"
-            sx={{
-              mr: 25,
-              ml: 9,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
+            sx={
+              language == "ar" ?
+                {
+                  mr: 10,
+                  ml: 9,
+                  display: { xs: 'none', md: 'flex' },
+                  fontFamily: 'monospace',
+                  fontWeight: 700,
+                  letterSpacing: '.3rem',
+                  color: 'inherit',
+                  textDecoration: 'none',
+                }
+                :
+                {
+                  mr: 15,
+                  ml: 9,
+                  display: { xs: 'none', md: 'flex' },
+                  fontFamily: 'monospace',
+                  fontWeight: 700,
+                  letterSpacing: '.3rem',
+                  color: 'inherit',
+                  textDecoration: 'none',
+                }
+            }
           >
             <img src='../logo.png' width="50px" />
           </Typography>
@@ -127,12 +173,22 @@ function Navbar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map(({ title, href }, index) => (
+              {pages.map(({ title, title_ar, href }, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Link href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>{title}</Link>
+                  <Link href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>
+                    {i18n.language == "ar" ? title_ar : title}
+                  </Link>
                 </MenuItem>
               ))}
-              
+              <select
+                id="language-selector"
+                onChange={handleLanguageChange}
+                defaultValue={localStorage.getItem('selectedLanguage')}
+              >
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+              </select>
+
             </Menu>
           </Box>
           <Typography
@@ -156,13 +212,15 @@ function Navbar() {
             <img src='../logo.png' width="50px" />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, textAlign: 'center' }}>
-            {pages.map(({ title, href }, index) => (
-              <Link key={index} href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>{title}</Link>
+            {pages.map(({ title, title_ar, href }, index) => (
+              <Link key={index} href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>
+                {i18n.language == "ar" ? title_ar : title}
+              </Link>
             ))}
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    </AppBar >
   );
 }
 export default Navbar;

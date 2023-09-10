@@ -27,7 +27,7 @@ const OurWork = () => {
   return (
     <>
       <Head>
-        <title>Sigma - Our work</title>
+        <title>Our work - Sigma</title>
         <link rel="icon" href="logo.png" />
       </Head>
       <div className='mt-10 flex'>
