@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Head>
         <title>Sigma</title>
-        <link rel="icon" href="logo.png" />
+        <link rel="icon" href="logo3.png" />
       </Head>
 
       <div className='home_page' dir={language == "ar" ? "rtl" : "ltr"}>

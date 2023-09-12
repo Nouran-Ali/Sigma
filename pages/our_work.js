@@ -38,7 +38,7 @@ const OurWork = () => {
     <>
       <Head>
         <title>Our work - Sigma</title>
-        <link rel="icon" href="logo.png" />
+        <link rel="icon" href="logo3.png" />
       </Head>
       <div className={`mt-10 flex ${language == "ar" ? "ourWorkAr" : "ourWorkEn"}`}>
         <Tabs

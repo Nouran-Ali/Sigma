@@ -142,7 +142,7 @@ function Navbar() {
                 }
             }
           >
-            <img src='../logo.png' width="50px" />
+            <img src='../logo.png' width="55px" />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} className="ml-5">

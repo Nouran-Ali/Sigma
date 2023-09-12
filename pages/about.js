@@ -10,7 +10,7 @@ const About = () => {
         <>
             <Head>
                 <title>About us - Sigma</title>
-                <link rel="icon" href="logo.png" />
+                <link rel="icon" href="logo3.png" />
             </Head>
 
             <div className="grid grid-cols-2 gap-4 max-xl:grid-cols-1" dir={language == "ar" ? "rtl" : "ltr"}>

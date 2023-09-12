@@ -14,7 +14,7 @@ const Contact = () => {
     <>
       <Head>
         <title>Contact - Sigma</title>
-        <link rel="icon" href="logo.png" />
+        <link rel="icon" href="logo3.png" />
       </Head>
       <div className='grid grid-cols-2 max-xl:grid-cols-1 gap-12 mt-7 max-xl:flex max-xl:flex-wrap-reverse' dir={language == "ar" ? "rtl" : "ltr"}>
         <div className='animation_contact_left'>

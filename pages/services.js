@@ -24,7 +24,7 @@ const services = () => {
         <>
             <Head>
                 <title>Services - Sigma</title>
-                <link rel="icon" href="logo.png" />
+                <link rel="icon" href="logo3.png" />
             </Head>
             <div className='2xl:flex mt-9' dir={language == "ar" ? "rtl" : "ltr"}>
                 <div className={`2xl:absolute top-28 ${language == "ar" ? styles.animation_ar : styles.animation}`}>
