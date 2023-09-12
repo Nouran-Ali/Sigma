@@ -6,7 +6,7 @@
     "read_more": "Read more"
   },
   "About": {
-    "About": "About",
+    "About": "About ",
     "paragragh": "Sigma is a progressive architectural practice providing high quality architectural and construction services for the domestic , industrial and commercial sectors.",
     "paragragh2": "We are committed to providing appropriate, imaginative, cost-effective, and technical solutions to meet our client’s individual requirements.",
     "paragragh3": " We implement and manage our input into each project to the highest professional standards, meeting with our clients requirements with clear communication throughout the project."
@@ -21,5 +21,36 @@
     "card_two": "Professional building solutions for residential , industrial and commercial projects, ensuring quality, efficiency, and safety.",
     "Engineering_Services": "Engineering Services",
     "card_three": "Providing expert technical designs, analysis, troubleshooting and project management for all engineering needs."
+  },
+  "all_project": {
+    "PROJECTS": "PROJECTS",
+    "INTERIOR_FINISHING": "INTERIOR FINISHING",
+    "title_wedding": "Wedding hall - Palace Prince",
+    "title_showers": "Bridal showers",
+    "title_sports": "Private sports club",
+    "title_structure": "Structure stage"
+  },
+  "Our_work": "Our work",
+  "Projects_Info":"Projects Info",
+  "Wedding_hall_project": "Wedding hall project",
+  "Before_implementation" :"Before implementation",
+  "Contact_us": "Contact us",
+  "After_implementation": "After implementation",
+  "Client":"Client:",
+  "Date": "Date:",
+  "Location": "Location:",
+  "Bridal_showers_project": "Bridal showers project",
+  "Private_sports_club_project": "Private sports club project",
+  "Structure_stage_project": "Structure stage project",
+  "contact": {
+    "Connect_With_Us": "Connect With Us",
+    "First_Name": "First Name*",
+    "Last_Name": "Last Name*",
+    "Enter_Email": "Enter Email*",
+    "Phone_No": "Phone No.",
+    "Message_here": "Message here...",
+    "Send_Now": "Send Now",
+    "Email": "Email:",
+    "Phone": "Phone:"
   }
 }

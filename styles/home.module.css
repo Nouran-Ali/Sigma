@@ -8,6 +8,7 @@
 }
 
 .background_ar {
+    background-image: linear-gradient(#304644, #91b0b0);
     top: -99px;
     left: -110px;
 }

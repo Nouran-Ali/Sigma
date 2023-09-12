@@ -18,6 +18,7 @@ import styles from "../styles/navbar.module.css";
 import Link from 'next/link';
 import { useTranslation } from "react-i18next";
 import i18next from 'i18next';
+import { Select } from 'antd';
 
 const pages = [
   {
@@ -92,8 +93,8 @@ function Navbar() {
     });
   };
 
-  const handleLanguageChange = (event) => {
-    const selectedLanguage = event.target.value;
+  const handleLanguageChange = (value) => {
+    const selectedLanguage = value;
     changeLanguage(selectedLanguage);
     localStorage.setItem('selectedLanguage', selectedLanguage);
   };
@@ -180,14 +181,23 @@ function Navbar() {
                   </Link>
                 </MenuItem>
               ))}
-              <select
+              <Select
                 id="language-selector"
-                onChange={handleLanguageChange}
                 defaultValue={localStorage.getItem('selectedLanguage')}
-              >
-                <option value="en">EN</option>
-                <option value="ar">AR</option>
-              </select>
+                onChange={handleLanguageChange}
+                className='ml-12 mx-auto'
+                options={[
+                  {
+                    value: 'en',
+                    label: 'EN',
+                  },
+                  {
+                    value: 'ar',
+                    label: 'AR',
+                  },
+                ]}
+                style={{ color: "#304644", backgroundColor: "#f1f2f3", fontWeight: "600" }}
+              />
 
             </Menu>
           </Box>
@@ -217,6 +227,23 @@ function Navbar() {
                 {i18n.language == "ar" ? title_ar : title}
               </Link>
             ))}
+            <Select
+              id="language-selector"
+              defaultValue={localStorage.getItem('selectedLanguage')}
+              onChange={handleLanguageChange}
+              className='mt-1'
+              options={[
+                {
+                  value: 'en',
+                  label: 'EN',
+                },
+                {
+                  value: 'ar',
+                  label: 'AR',
+                },
+              ]}
+              style={{ color: "#304644", backgroundColor: "#f1f2f3", fontWeight: "600" }}
+            />
           </Box>
         </Toolbar>
       </Container>

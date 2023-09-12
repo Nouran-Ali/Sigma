@@ -1,12 +1,17 @@
 import styles from "../styles/project.module.css";
 import Project from './Project'
+import { useTranslation } from "react-i18next";
 
 const All_projects = () => {
+
+    const [t, i18n] = useTranslation();
+    const { language } = i18n;
+
     return (
-        <div className={``}>
-            <div className="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-6 mr-7 mb-44">
+        <div className={``} dir={language == "ar" ? "rtl" : "ltr"}>
+            <div className={`grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-6 ${language == "en" && "mr-7"} mb-44`}>
                 <Project
-                    title="Wedding hall - Palace Prince"
+                    title={t("all_project.title_wedding")}
                     href="/wedding_hall"
                     icon="/../palace.png"
                     background={styles.bgProjectOne}
@@ -15,7 +20,7 @@ const All_projects = () => {
                 />
 
                 <Project
-                    title="Bridal showers"
+                    title={t("all_project.title_showers")}
                     href="/bridal_showers"
                     icon="/../bathing.png"
                     background={styles.bgProjectTwo}
@@ -24,7 +29,7 @@ const All_projects = () => {
                 />
 
                 <Project
-                    title="Private sports club"
+                    title={t("all_project.title_sports")}
                     href="/private_sports_club"
                     icon="/../treadmill.png"
                     background={styles.bgProjectThree}
@@ -32,7 +37,7 @@ const All_projects = () => {
                     iconTwo="/../treadmill2.png"
                 />
                 <Project
-                    title="Structure stage"
+                    title={t("all_project.title_structure")}
                     href="/structure_stage"
                     icon="/../concrete.png"
                     background={styles.bgProjectFour}
