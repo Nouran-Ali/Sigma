@@ -6,6 +6,7 @@ import {
     ZoomInOutlined,
     ZoomOutOutlined,
 } from '@ant-design/icons';
+import { useTranslation } from "react-i18next";
 import { Image, Space } from 'antd';
 const src1 = '/../Interior_finishing/5.jpeg';
 const src2 = '/../Interior_finishing/1.jpeg';
@@ -16,6 +17,9 @@ const src6 = '/../Interior_finishing/15.jpeg';
 const src7 = '/../Interior_finishing/6.jpeg';
 
 const Interior_finishing = () => {
+
+    const [t, i18n] = useTranslation();
+    const { language } = i18n;
 
     const onDownload = () => {
         fetch(src1)
@@ -34,7 +38,7 @@ const Interior_finishing = () => {
 
     return (
         <>
-            <div className='flex flex-col md:flex-row md:items-start'>
+            <div className={`flex flex-col md:flex-row md:items-start ${language == "ar" ? "" : "md:items-start"}`} dir={language == "ar" ? "rtl" : "ltr"}>
                 <div className='mb-5 md:mr-5'>
                     <Image
                         width={250}
@@ -120,7 +124,7 @@ const Interior_finishing = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:items-start'>
-                <div className='images_ourwork mb-5 md:mr-5'>
+                <div className={`${language == "ar" ? "images_ourwork_left_two_Ar" : "images_ourwork_left_two"} mb-5 md:mr-5`}>
                     <Image
                         width={250}
                         height={200}
@@ -147,7 +151,7 @@ const Interior_finishing = () => {
                         }}
                     />
                 </div>
-                <div className='images_ourwork_left mb-5 md:mr-5'>
+                <div className={`${language == "ar" ? "images_ourwork_left_ar" : "images_ourwork_left"} mb-5 md:mr-5`}>
                     <Image
                         width={250}
                         height={200}

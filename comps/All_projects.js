@@ -9,7 +9,7 @@ const All_projects = () => {
 
     return (
         <div className={``} dir={language == "ar" ? "rtl" : "ltr"}>
-            <div className={`grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-6 ${language == "en" && "mr-7"} mb-44`}>
+            <div className={`grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-6 ${language == "en" && "mr-7"} mb-44 ${styles.animation_projects}`}>
                 <Project
                     title={t("all_project.title_wedding")}
                     href="/wedding_hall"

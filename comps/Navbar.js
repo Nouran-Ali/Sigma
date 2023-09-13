@@ -87,24 +87,23 @@ function Navbar() {
     }
   }
 
-  const changeLanguage = (language) => {
+  const changeLanguageButton = (language) => {
     i18next.changeLanguage(language, (err, t) => {
       if (err) return console.log('something went wrong loading', err);
     });
-  };
 
-  const handleLanguageChange = (value) => {
-    const selectedLanguage = value;
-    changeLanguage(selectedLanguage);
-    localStorage.setItem('selectedLanguage', selectedLanguage);
+    // Store the selected language in localStorage
+    localStorage.setItem('selectedLanguage', language);
   };
 
   useEffect(() => {
+    // On page load, retrieve the selected language from localStorage and set it
     const storedLanguage = localStorage.getItem('selectedLanguage');
     if (storedLanguage) {
-      changeLanguage(storedLanguage);
+      changeLanguageButton(storedLanguage);
     } else {
-      changeLanguage(navigator.language);
+      // If no language is stored, use the browser's language as the default
+      changeLanguageButton(navigator.language);
     }
   }, []);
 
@@ -181,24 +180,13 @@ function Navbar() {
                   </Link>
                 </MenuItem>
               ))}
-              <Select
-                id="language-selector"
-                defaultValue={localStorage.getItem('selectedLanguage')}
-                onChange={handleLanguageChange}
-                className='ml-12 mx-auto'
-                options={[
-                  {
-                    value: 'en',
-                    label: 'EN',
-                  },
-                  {
-                    value: 'ar',
-                    label: 'AR',
-                  },
-                ]}
-                style={{ color: "#304644", backgroundColor: "#f1f2f3", fontWeight: "600" }}
-              />
-
+              <Button
+                onClick={() => changeLanguageButton(language == "ar" ? "en" : "ar")}
+                style={{ color: "#304644", fontWeight: "600" , marginLeft: "44px"}}
+                className='ml-9'
+              >
+                {language == "ar" ? "EN" : "AR"}
+              </Button>
             </Menu>
           </Box>
           <Typography
@@ -227,23 +215,12 @@ function Navbar() {
                 {i18n.language == "ar" ? title_ar : title}
               </Link>
             ))}
-            <Select
-              id="language-selector"
-              defaultValue={localStorage.getItem('selectedLanguage')}
-              onChange={handleLanguageChange}
-              className='mt-1'
-              options={[
-                {
-                  value: 'en',
-                  label: 'EN',
-                },
-                {
-                  value: 'ar',
-                  label: 'AR',
-                },
-              ]}
+            <Button
+              onClick={() => changeLanguageButton(language == "ar" ? "en" : "ar")}
               style={{ color: "#304644", backgroundColor: "#f1f2f3", fontWeight: "600" }}
-            />
+            >
+              {language == "ar" ? "EN" : "AR"}
+            </Button>
           </Box>
         </Toolbar>
       </Container>

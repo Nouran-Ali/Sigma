@@ -45,15 +45,33 @@
     top: 220px;
 }
 
+.images_ourwork_ar{
+    position: absolute;
+    top: 220px;
+}
+
 .images_ourwork_left {
     position: absolute;
     top: 220px;
     left: 614px;
 }
+
+.images_ourwork_left_ar{
+    position: absolute;
+    top: 220px;
+    right: 614px;
+}
+
 .images_ourwork_left_two {
     position: absolute;
-    top: 440px;
+    top: 220px;
     left: 25px;
+}
+
+.images_ourwork_left_two_Ar {
+    position: absolute;
+    top: 220px;
+    right: 25px;
 }
 
 .images_ourwork_center {

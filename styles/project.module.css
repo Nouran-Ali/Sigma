@@ -119,8 +119,31 @@
     /* position: relative; */
 }
 
+.animation_projects {
+    position: relative;
+    animation: fade-left 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade-left {
+    0% {
+        left: -90px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+
 @media (max-width: 1280px) {
-    .bgProjectOne , .bgProjectTwo, .bgProjectThree, .bgProjectFour{
+
+    .bgProjectOne,
+    .bgProjectTwo,
+    .bgProjectThree,
+    .bgProjectFour {
         width: 230px;
         height: 300px;
     }

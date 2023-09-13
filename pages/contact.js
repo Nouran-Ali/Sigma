@@ -17,10 +17,10 @@ const Contact = () => {
         <link rel="icon" href="logo3.png" />
       </Head>
       <div className='grid grid-cols-2 max-xl:grid-cols-1 gap-12 mt-7 max-xl:flex max-xl:flex-wrap-reverse' dir={language == "ar" ? "rtl" : "ltr"}>
-        <div className='animation_contact_left'>
+        <div className={`${language == "ar" ? "animation_contact_right" : "animation_contact_left"}`}>
           <Contact_form />
         </div>
-        <div className='animation_contact_right max-xl:mb-10'>
+        <div className={`${language == "ar" ? "animation_contact_left" : "animation_contact_right"} max-xl:mb-10`}>
           <Contact_info />
         </div>
       </div>

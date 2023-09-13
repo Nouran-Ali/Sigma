@@ -95,4 +95,15 @@
             opacity: 1;
         }
     }
+    @keyframes fade-left-ar {
+        0% {
+            right: 0px;
+            opacity: 0;
+        }
+    
+        100% {
+            right: 40px;
+            opacity: 1;
+        }
+    }
 }

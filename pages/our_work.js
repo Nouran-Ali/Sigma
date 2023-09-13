@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const OurWork = () => {
 
   const [t, i18n] = useTranslation();
-    const { language } = i18n;
+  const { language } = i18n;
 
   const items = [
     {
@@ -40,7 +40,7 @@ const OurWork = () => {
         <title>Our work - Sigma</title>
         <link rel="icon" href="logo3.png" />
       </Head>
-      <div className={`mt-10 flex ${language == "ar" ? "ourWorkAr" : "ourWorkEn"}`}>
+      <div className={`mt-10 ${language == "ar" ? "ourWorkAr" : "ourWorkEn"}`}>
         <Tabs
           tabPosition={language == "ar" ? tabPositionAr : tabPosition}
           items={items}

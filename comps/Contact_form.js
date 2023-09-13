@@ -49,7 +49,7 @@ export const Contact_form = () => {
             </form>
             <div className='flex justify-center mt-5'>
                 <Link
-                    href="https://wa.me/01019818304"
+                    href="https://wa.me/+966568591586"
                     target="_blank"
                     rel="noopener noreferrer"
                     className='mr-3 text-[#008069]'
