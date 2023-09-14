@@ -144,7 +144,8 @@ function Navbar() {
             <img src='../logo.png' width="55px" />
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }} className="ml-5">
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' },
+            alignItems: 'center',textAlign: 'center'}} className="ml-5">
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -182,7 +183,7 @@ function Navbar() {
               ))}
               <Button
                 onClick={() => changeLanguageButton(language == "ar" ? "en" : "ar")}
-                style={{ color: "#304644", fontWeight: "600" , marginLeft: "44px"}}
+                style={{ color: "#304644", fontWeight: "600", marginLeft: "44px" }}
                 className='ml-9'
               >
                 {language == "ar" ? "EN" : "AR"}
@@ -209,7 +210,11 @@ function Navbar() {
           >
             <img src='../logo.png' width="50px" />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, textAlign: 'center' }}>
+          <Box sx={{
+            flexGrow: 1,
+            display: { xs: 'none', md: 'flex' },
+            textAlign: 'center',
+          }}>
             {pages.map(({ title, title_ar, href }, index) => (
               <Link key={index} href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>
                 {i18n.language == "ar" ? title_ar : title}

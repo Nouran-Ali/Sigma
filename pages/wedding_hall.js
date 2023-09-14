@@ -23,6 +23,8 @@ const Wedding_hall = () => {
   const [t, i18n] = useTranslation();
   const { language } = i18n;
 
+  const mediaQuery = window.matchMedia('(max-width: 1280px)');
+
   return (
     <div dir={language == "ar" ? "rtl" : "ltr"}>
       <Breadcrumb
@@ -150,8 +152,8 @@ const Wedding_hall = () => {
           </div>
           <div className='rounded-lg mb-7 flex justify-end image_wedding max-lg:justify-start'>
             <Image
-              width={200}
-              height={150}
+              width={mediaQuery.matches ? 300 : 200}
+              height={mediaQuery.matches ? 200 : 150}
               src={"/wedding_hall/2.jpeg"}
               className='rounded-lg'
               preview={{
@@ -176,8 +178,8 @@ const Wedding_hall = () => {
           </div>
           <div className='rounded-lg mt-5 mb-5'>
             <Image
-              width={200}
-              height={150}
+              width={mediaQuery.matches ? 300 : 200}
+              height={mediaQuery.matches ? 200 : 150}
               src={"/wedding_hall/3.jpeg"}
               className='rounded-lg'
               preview={{
@@ -230,7 +232,7 @@ const Wedding_hall = () => {
       </div>
 
       <div className='grid grid-cols-2 max-md:grid-cols-1 gap-8 flex max-xl:flex-wrap-reverse items-center mt-8 mb-14'>
-        <div className={`grid grid-cols-2 max-lg:grid-cols-1 gap-4 flex items-center ${styles.bg_wedding}`}>
+        <div className={`grid grid-cols-2 max-lg:grid-cols-1 gap-4 flex items-center order-2 md:order-1 ${styles.bg_wedding}`}>
           <div className='rounded-lg mt-5 mb-5'>
             <Image
               width={300}
@@ -259,8 +261,8 @@ const Wedding_hall = () => {
           </div>
           <div className='rounded-lg mb-7 flex justify-end image_wedding max-lg:justify-start'>
             <Image
-              width={200}
-              height={150}
+              width={mediaQuery.matches ? 300 : 200}
+              height={mediaQuery.matches ? 200 : 150}
               src={"/wedding_hall/7.jpeg"}
               className='rounded-lg'
               preview={{
@@ -285,8 +287,8 @@ const Wedding_hall = () => {
           </div>
           <div className='rounded-lg mt-5 mb-5'>
             <Image
-              width={200}
-              height={150}
+              width={mediaQuery.matches ? 300 : 200}
+              height={mediaQuery.matches ? 200 : 150}
               src={"/wedding_hall/9.jpeg"}
               className='rounded-lg'
               preview={{
@@ -336,7 +338,7 @@ const Wedding_hall = () => {
             />
           </div>
         </div>
-        <div>
+        <div className='order-1 md:order-2'>
           <p className='text-xl text-[#d1a916]'>{t("Our_work")}</p>
           <h2 className='text-4xl mt-3'>{t("After_implementation")}</h2>
           <p className='mt-3 text-[#677289]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>

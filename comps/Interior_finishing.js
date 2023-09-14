@@ -1,5 +1,4 @@
 import {
-    DownloadOutlined,
     RotateLeftOutlined,
     RotateRightOutlined,
     SwapOutlined,
@@ -8,33 +7,51 @@ import {
 } from '@ant-design/icons';
 import { useTranslation } from "react-i18next";
 import { Image, Space } from 'antd';
-const src1 = '/../Interior_finishing/5.jpeg';
-const src2 = '/../Interior_finishing/1.jpeg';
-const src3 = '/../Interior_finishing/4.jpeg';
-const src4 = '/../Interior_finishing/10.jpeg';
-const src5 = '/../Interior_finishing/7.jpeg';
-const src6 = '/../Interior_finishing/15.jpeg';
-const src7 = '/../Interior_finishing/6.jpeg';
+import { useState, useEffect } from 'react';
+
+const images = ['/../Interior_finishing/5.jpeg',
+    '/../Interior_finishing/27.jpeg',
+    '/../Interior_finishing/10.jpeg',
+    "/../Interior_finishing/28.jpeg"];
+
+const images2 = ['/../Interior_finishing/1.jpeg',
+    '/../Interior_finishing/26.jpeg',
+    '/../Interior_finishing/15.jpeg',
+    "/../Interior_finishing/6.jpeg"];
+
+const images3 = ['/../Interior_finishing/10.jpeg',
+    '/../Interior_finishing/16.jpeg',
+    '/../Interior_finishing/17.jpeg',
+    "/../Interior_finishing/18.jpeg"];
+
+const images4 = ['/../Interior_finishing/4.jpeg',
+    '/../Interior_finishing/19.jpeg',
+    '/../Interior_finishing/20.jpeg',
+    "/../Interior_finishing/21.jpeg"];
+
+const images5 = ['/../Interior_finishing/7.jpeg',
+    '/../Interior_finishing/22.jpeg',
+    '/../Interior_finishing/23.jpeg',
+    "/../Interior_finishing/24.jpeg"];
 
 const Interior_finishing = () => {
 
     const [t, i18n] = useTranslation();
     const { language } = i18n;
 
-    const onDownload = () => {
-        fetch(src1)
-            .then((response) => response.blob())
-            .then((blob) => {
-                const url = URL.createObjectURL(new Blob([blob]));
-                const link = document.createElement('a');
-                link.href = url;
-                link.download = 'image.png';
-                document.body.appendChild(link);
-                link.click();
-                URL.revokeObjectURL(url);
-                link.remove();
-            });
-    };
+    const [currentImage, setCurrentImage] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+            setCurrentImage((prevImage) => (prevImage + 1) % images2.length);
+            setCurrentImage((prevImage) => (prevImage + 1) % images3.length);
+            setCurrentImage((prevImage) => (prevImage + 1) % images4.length);
+            setCurrentImage((prevImage) => (prevImage + 1) % images5.length);
+        }, 8000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <>
@@ -43,7 +60,8 @@ const Interior_finishing = () => {
                     <Image
                         width={250}
                         height={200}
-                        src={src1}
+                        src={images[currentImage]}
+                        alt={`Image ${currentImage + 1}`}
                         className='rounded-lg image_ourWork animation_ourwork'
                         preview={{
                             toolbarRender: (
@@ -54,7 +72,6 @@ const Interior_finishing = () => {
                                 },
                             ) => (
                                 <Space size={12} className="toolbar-wrapper">
-                                    <DownloadOutlined onClick={onDownload} />
                                     <SwapOutlined rotate={90} onClick={onFlipY} />
                                     <SwapOutlined onClick={onFlipX} />
                                     <RotateLeftOutlined onClick={onRotateLeft} />
@@ -71,8 +88,9 @@ const Interior_finishing = () => {
                     <Image
                         width={300}
                         height={300}
-                        src={src2}
-                        className='rounded-lg image_ourWork large_image_ourWork animation_ourwork_image'
+                        src={images2[currentImage]}
+                        alt={`Image ${currentImage + 1}`}
+                        className='rounded-lg image_ourWork large_image_ourWork animation_center_image'
                         preview={{
                             toolbarRender: (
                                 _,
@@ -82,7 +100,6 @@ const Interior_finishing = () => {
                                 },
                             ) => (
                                 <Space size={12} className="toolbar-wrapper">
-                                    <DownloadOutlined onClick={onDownload} />
                                     <SwapOutlined rotate={90} onClick={onFlipY} />
                                     <SwapOutlined onClick={onFlipX} />
                                     <RotateLeftOutlined onClick={onRotateLeft} />
@@ -98,7 +115,8 @@ const Interior_finishing = () => {
                     <Image
                         width={250}
                         height={200}
-                        src={src4}
+                        src={images3[currentImage]}
+                        alt={`Image ${currentImage + 1}`}
                         className='rounded-lg image_ourWork animation_ourwork'
                         preview={{
                             toolbarRender: (
@@ -109,7 +127,6 @@ const Interior_finishing = () => {
                                 },
                             ) => (
                                 <Space size={12} className="toolbar-wrapper">
-                                    <DownloadOutlined onClick={onDownload} />
                                     <SwapOutlined rotate={90} onClick={onFlipY} />
                                     <SwapOutlined onClick={onFlipX} />
                                     <RotateLeftOutlined onClick={onRotateLeft} />
@@ -124,11 +141,12 @@ const Interior_finishing = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:items-start'>
-                <div className={`${language == "ar" ? "images_ourwork_left_two_Ar" : "images_ourwork_left_two"} mb-5 md:mr-5`}>
+                <div className={`${language == "ar" ? "images_position_right_Ar" : "images_position_right"} mb-5 md:mr-5`}>
                     <Image
                         width={250}
                         height={200}
-                        src={src3}
+                        src={images4[currentImage]}
+                        alt={`Image ${currentImage + 1}`}
                         className='rounded-lg image_ourWork animation_ourwork'
                         preview={{
                             toolbarRender: (
@@ -139,7 +157,6 @@ const Interior_finishing = () => {
                                 },
                             ) => (
                                 <Space size={12} className="toolbar-wrapper">
-                                    <DownloadOutlined onClick={onDownload} />
                                     <SwapOutlined rotate={90} onClick={onFlipY} />
                                     <SwapOutlined onClick={onFlipX} />
                                     <RotateLeftOutlined onClick={onRotateLeft} />
@@ -151,11 +168,12 @@ const Interior_finishing = () => {
                         }}
                     />
                 </div>
-                <div className={`${language == "ar" ? "images_ourwork_left_ar" : "images_ourwork_left"} mb-5 md:mr-5`}>
+                <div className={`${language == "ar" ? "images_position_left_ar" : "images_position_left"} mb-5 md:mr-5`}>
                     <Image
                         width={250}
                         height={200}
-                        src={src5}
+                        src={images5[currentImage]}
+                        alt={`Image ${currentImage + 1}`}
                         className='rounded-lg image_ourWork animation_ourwork'
                         preview={{
                             toolbarRender: (
@@ -166,7 +184,6 @@ const Interior_finishing = () => {
                                 },
                             ) => (
                                 <Space size={12} className="toolbar-wrapper">
-                                    <DownloadOutlined onClick={onDownload} />
                                     <SwapOutlined rotate={90} onClick={onFlipY} />
                                     <SwapOutlined onClick={onFlipX} />
                                     <RotateLeftOutlined onClick={onRotateLeft} />
@@ -178,61 +195,6 @@ const Interior_finishing = () => {
                         }}
                     />
                 </div>
-
-                {/* <div className='images_ourwork_center mb-5 md:mr-5 large_image_ourWork_2'>
-                    <Image
-                        width={300}
-                        height={320}
-                        src={src6}
-                        className='rounded-lg image_ourWork large_image_ourWork_2 animation_ourwork_image_planing'
-                        preview={{
-                            toolbarRender: (
-                                _,
-                                {
-                                    transform: { scale },
-                                    actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
-                                },
-                            ) => (
-                                <Space size={12} className="toolbar-wrapper">
-                                    <DownloadOutlined onClick={onDownload} />
-                                    <SwapOutlined rotate={90} onClick={onFlipY} />
-                                    <SwapOutlined onClick={onFlipX} />
-                                    <RotateLeftOutlined onClick={onRotateLeft} />
-                                    <RotateRightOutlined onClick={onRotateRight} />
-                                    <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
-                                    <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
-                                </Space>
-                            ),
-                        }}
-                    />
-                </div>
-                <div className='images_ourwork_left_two mb-5 md:mr-5'>
-                    <Image
-                        width={250}
-                        height={200}
-                        src={src7}
-                        className='rounded-lg image_ourWork animation_ourwork'
-                        preview={{
-                            toolbarRender: (
-                                _,
-                                {
-                                    transform: { scale },
-                                    actions: { onFlipY, onFlipX, onRotateLeft, onRotateRight, onZoomOut, onZoomIn },
-                                },
-                            ) => (
-                                <Space size={12} className="toolbar-wrapper">
-                                    <DownloadOutlined onClick={onDownload} />
-                                    <SwapOutlined rotate={90} onClick={onFlipY} />
-                                    <SwapOutlined onClick={onFlipX} />
-                                    <RotateLeftOutlined onClick={onRotateLeft} />
-                                    <RotateRightOutlined onClick={onRotateRight} />
-                                    <ZoomOutOutlined disabled={scale === 1} onClick={onZoomOut} />
-                                    <ZoomInOutlined disabled={scale === 50} onClick={onZoomIn} />
-                                </Space>
-                            ),
-                        }}
-                    />
-                </div> */}
             </div>
         </>
     )
