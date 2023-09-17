@@ -59,7 +59,7 @@ const Interior_finishing = () => {
             <div className={`flex flex-col md:flex-row md:items-start ${language == "ar" ? "" : "md:items-start"}`} dir={language == "ar" ? "rtl" : "ltr"}>
                 <div className='mb-5 md:mr-5'>
                     <Image
-                        width={mediaQuery.matches ? 316 : 250}
+                        width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
                         src={images[currentImage]}
                         alt={`Image ${currentImage + 1}`}
@@ -87,7 +87,7 @@ const Interior_finishing = () => {
 
                 <div className='mb-5 md:mr-5 large_image_ourWork'>
                     <Image
-                        width={mediaQuery.matches ? 316 : 300}
+                        width={mediaQuery.matches ? 300 : 300}
                         height={mediaQuery.matches ? 300 : 300}
                         src={images2[currentImage]}
                         alt={`Image ${currentImage + 1}`}
@@ -114,7 +114,7 @@ const Interior_finishing = () => {
                 </div>
                 <div className='mb-5 md:mr-5'>
                     <Image
-                        width={mediaQuery.matches ? 316 : 250}
+                        width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
                         src={images3[currentImage]}
                         alt={`Image ${currentImage + 1}`}
@@ -144,7 +144,7 @@ const Interior_finishing = () => {
             <div className='flex flex-col md:flex-row md:items-start'>
                 <div className={`${language == "ar" ? "images_position_right_Ar" : "images_position_right"} mb-5 md:mr-5`}>
                     <Image
-                        width={mediaQuery.matches ? 316 : 250}
+                        width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
                         src={images4[currentImage]}
                         alt={`Image ${currentImage + 1}`}
@@ -171,7 +171,7 @@ const Interior_finishing = () => {
                 </div>
                 <div className={`${language == "ar" ? "images_position_left_ar" : "images_position_left"} mb-5 md:mr-5`}>
                     <Image
-                        width={mediaQuery.matches ? 316 : 250}
+                        width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
                         src={images5[currentImage]}
                         alt={`Image ${currentImage + 1}`}

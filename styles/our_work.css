@@ -177,7 +177,7 @@
     }
 
     .Interior_finishing {
-        margin-top: 20px;
+        margin-top: 20px !important;
     }
     @keyframes fade {
         0% {
@@ -187,7 +187,7 @@
         }
     
         100% {
-            width: 316px;
+            width: 300px;
             height: 300px;
             /* opacity: 0; */
         }
@@ -200,7 +200,7 @@
         }
     
         100% {
-            width: 316px;
+            width: 300px;
             height: 300px;
             /* opacity: 0; */
         }
