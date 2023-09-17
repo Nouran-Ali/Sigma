@@ -172,6 +172,10 @@ body::-webkit-scrollbar-track {
   background-color: #7a9595 !important;
 }
 
+:where(.css-dev-only-do-not-override-byeoj0).ant-tabs-left >.ant-tabs-nav .ant-tabs-tab{
+  padding: 8px 10px !important;
+}
+
 @media (max-width: 1280px) {
   .d_none {
     display: none;
@@ -187,5 +191,22 @@ body::-webkit-scrollbar-track {
     left: 26%;
     margin-top: 248px;
     z-index: 1;
+  }
+  :where(.css-dev-only-do-not-override-byeoj0).ant-tabs-left >.ant-tabs-nav .ant-tabs-tab{
+    padding: 8px 8px !important;
+    font-size: 14px !important;
+  }
+
+  :where(.css-dev-only-do-not-override-byeoj0).ant-tabs{
+    position: absolute !important;
+    left: 10px !important;
+  }
+  .ourWorkAr :where(.css-dev-only-do-not-override-byeoj0).ant-tabs{
+    position: absolute !important;
+    right: 26px !important;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+    display: flex !important;
+    justify-content: center !important;
   }
 }

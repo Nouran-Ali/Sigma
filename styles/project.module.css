@@ -144,7 +144,18 @@
     .bgProjectTwo,
     .bgProjectThree,
     .bgProjectFour {
-        width: 230px;
-        height: 300px;
+        width: 187px;
+        height: 210px;
+    }
+
+    .title {
+        left: 31px !important;
+    }
+
+    .title_ar {
+        right: 24px;
+    }
+    .hover_content:hover .content {
+        display: none;
     }
 }

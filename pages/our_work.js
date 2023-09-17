@@ -45,7 +45,7 @@ const OurWork = () => {
           tabPosition={language == "ar" ? tabPositionAr : tabPosition}
           items={items}
           defaultActiveKey="1"
-          className="custom-tab-bar"
+          className="custom-tab-bar "
         />
       </div>
     </>

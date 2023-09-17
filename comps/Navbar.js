@@ -216,7 +216,7 @@ function Navbar() {
             textAlign: 'center',
           }}>
             {pages.map(({ title, title_ar, href }, index) => (
-              <Link key={index} href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>
+              <Link key={index} href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`} style={{align: "center"}}>
                 {i18n.language == "ar" ? title_ar : title}
               </Link>
             ))}
