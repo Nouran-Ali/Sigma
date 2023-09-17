@@ -25,11 +25,13 @@ const OurWork = () => {
 
   const [tabPosition, setTabPosition] = useState('left');
   const [tabPositionAr, setTabPositionAr] = useState('right');
+  const [tabPositionTop, setTabPositionTop] = useState('top');
+
+  const mediaQuery = window.matchMedia('(max-width: 1280px)');
 
   const changeTabPosition = (e) => {
     setTabPosition(e.target.value);
-  };
-  const changeTabPositionAr = (e) => {
+    setTabPositionTop(e.target.value);
     setTabPositionAr(e.target.value);
   };
 
@@ -42,10 +44,13 @@ const OurWork = () => {
       </Head>
       <div className={`mt-10 ${language == "ar" ? "ourWorkAr" : "ourWorkEn"}`}>
         <Tabs
-          tabPosition={language == "ar" ? tabPositionAr : tabPosition}
+          tabPosition={language == "ar" ?
+            mediaQuery.matches ? tabPositionTop : tabPositionAr
+            : mediaQuery.matches ? tabPositionTop : tabPosition
+          }
           items={items}
           defaultActiveKey="1"
-          className="custom-tab-bar "
+          className="custom-tab-bar"
         />
       </div>
     </>

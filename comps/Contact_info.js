@@ -22,7 +22,7 @@ export const Contact_info = () => {
                         </div>
                         <div>
                             <p className='text-[#d1a916] font-semibold'>{t("Location")}</p>
-                            <p className='text-[#7c7c7c] max-xl:text-sm'>Dahran street, almalaz, Riyadh, Saudi Arabia</p>
+                            <p className='text-[#7c7c7c] max-xl:text-sm'> {t("contact.company_location")}</p>
                         </div>
                     </div>
                     <div className='flex items-center mt-4'>
