@@ -57,7 +57,7 @@ const Interior_finishing = () => {
     return (
         <>
             <div className={`flex flex-col md:flex-row md:items-start ${language == "ar" ? "" : "md:items-start"}`} dir={language == "ar" ? "rtl" : "ltr"}>
-                <div className='mb-5 md:mr-5'>
+                <div className='mb-5 md:mr-5 max-md:mx-auto'>
                     <Image
                         width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
@@ -85,7 +85,7 @@ const Interior_finishing = () => {
                     />
                 </div>
 
-                <div className='mb-5 md:mr-5 large_image_ourWork'>
+                <div className='mb-5 md:mr-5 max-md:mx-auto large_image_ourWork'>
                     <Image
                         width={mediaQuery.matches ? 300 : 300}
                         height={mediaQuery.matches ? 300 : 300}
@@ -112,7 +112,7 @@ const Interior_finishing = () => {
                         }}
                     />
                 </div>
-                <div className='mb-5 md:mr-5'>
+                <div className='mb-5 md:mr-5 max-md:mx-auto'>
                     <Image
                         width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
@@ -142,7 +142,7 @@ const Interior_finishing = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:items-start'>
-                <div className={`${language == "ar" ? "images_position_right_Ar" : "images_position_right"} mb-5 md:mr-5`}>
+                <div className={`${language == "ar" ? "images_position_right_Ar" : "images_position_right"} mb-5 md:mr-5 max-md:mx-auto`}>
                     <Image
                         width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
@@ -169,7 +169,7 @@ const Interior_finishing = () => {
                         }}
                     />
                 </div>
-                <div className={`${language == "ar" ? "images_position_left_ar" : "images_position_left"} mb-5 md:mr-5`}>
+                <div className={`${language == "ar" ? "images_position_left_ar" : "images_position_left"} mb-5 md:mr-5 max-md:mx-auto`}>
                     <Image
                         width={mediaQuery.matches ? 300 : 250}
                         height={mediaQuery.matches ? 300 : 200}
