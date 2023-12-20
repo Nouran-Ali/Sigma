@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Steper from './Steper';
 import { useState, useEffect } from 'react';
+import Contact_home from './Contact_home';
 
 const Layout = ({ children }) => {
 
@@ -12,6 +13,8 @@ const Layout = ({ children }) => {
             setLoading(false);
         }, 300);
     }, []);
+
+    
 
     return (
         <div>

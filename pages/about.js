@@ -1,3 +1,4 @@
+import Contact_home from "@/comps/Contact_home";
 import Head from "next/head"
 import { useTranslation } from "react-i18next";
 
@@ -50,6 +51,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Contact_home />
         </>
     )
 }

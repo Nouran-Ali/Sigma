@@ -47,7 +47,7 @@
     }
 }
 
-.architectural_ar{
+.architectural_ar {
     transform: rotateY(-12deg);
     margin-top: 80px;
     margin-right: 70px;
@@ -78,6 +78,49 @@
     }
 }
 
+.contacts {
+    box-shadow: 0px 10px 30px 0px #7a95957c;
+    margin-top: 72px;
+    opacity: 1;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    animation-name: contact;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    bottom: 15px;
+}
+
+.showContacts {
+    opacity: 1;
+    transform: scale(1);
+    animation: none;
+}
+
+@keyframes contact {
+    0% {
+        bottom: 15px;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: 15px;
+    }
+}
+
+.number{
+    display: none;
+}
+
+.number_link:hover .number{
+    display: inline-block;
+}
 
 .arrows {
     border: 1px solid #3046446b;
@@ -109,7 +152,7 @@
     }
 }
 
-.animation_ar{
+.animation_ar {
     position: absolute;
     animation: fade-left-ar 1s;
     animation-iteration-count: 1;

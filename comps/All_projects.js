@@ -24,7 +24,7 @@ const All_projects = () => {
                     href="/bridal_showers"
                     icon="/../bathing.png"
                     background={styles.bgProjectTwo}
-                    paragragh="Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries."
+                    paragragh="Metal tube cutting Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries."
                     iconTwo="/../bathing2.png"
                 />
 

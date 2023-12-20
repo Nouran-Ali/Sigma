@@ -31,7 +31,7 @@ export const Contact_info = () => {
                         </div>
                         <div>
                             <p className='text-[#d1a916] font-semibold'>{t("contact.Email")}</p>
-                            <p className='text-[#7c7c7c] max-xl:text-sm'>abuahmad2006@outlook.sa</p>
+                            <p className='text-[#7c7c7c] max-xl:text-sm'>sigma.architectural@gmail.com</p>
                         </div>
                     </div>
                     <div className='flex items-center mt-4'>
