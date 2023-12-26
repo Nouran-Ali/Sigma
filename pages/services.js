@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from "../styles/services.module.css";
 import Head from 'next/head';
 import { useTranslation } from "react-i18next";
+import Contact_home from '@/comps/Contact_home';
 
 const services = () => {
 
@@ -119,6 +120,7 @@ const services = () => {
                     </div>
                 </div>
             </div>
+            <Contact_home />
         </>
     )
 }

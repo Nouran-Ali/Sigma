@@ -4,6 +4,7 @@ import All_projects from '@/comps/All_projects';
 import Interior_finishing from '@/comps/Interior_finishing';
 import Head from 'next/head';
 import { useTranslation } from "react-i18next";
+import Contact_home from '@/comps/Contact_home';
 
 const OurWork = () => {
 
@@ -53,6 +54,7 @@ const OurWork = () => {
           className="custom-tab-bar"
         />
       </div>
+      <Contact_home />
     </>
   )
 }

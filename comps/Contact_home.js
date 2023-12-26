@@ -26,66 +26,28 @@ const Contact_home = () => {
     };
 
     return (
-        <div>
-            {
-                mediaQuery.matches ?
-                    <>
-                        <div className={`absolute max-xl:bottom-11 ${language == "ar" ? "right-11 max-xl:right-10" : "left-7 max-xl:left-10"} max-xl:flex max-xl:items-center`} dir={language == "ar" ? "rtl" : "ltr"}>
-                            <div>
-                                <Link href="https://wa.me/00966568591586" target="_blank" rel="noopener noreferrer" className='ml-4'>
-                                    <WhatsAppIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' />
-                                </Link>
-                            </div>
-                            <div className='mt-3'>
-                                <Link href="tel:00966568591586" className={`ml-4 text-[#7a9595] ${styles.number_link}`}>
-                                    {
-                                        language == "ar" ? <><PhoneIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' /><span className={styles.number}>+966568591586</span> </>
-                                            :
-                                            <><PhoneIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' /> <span className={styles.number}>+966568591586</span></>
-                                    }
-                                </Link>
-                            </div>
-                            <div className='mt-3'>
-                                <Link href="mailto:sigma.architectural@gmail.com" className='ml-4'>
-                                    <MailIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' />
-                                </Link>
-                            </div>
-                        </div>
-                    </>
-                    :
-                    <>
-                        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                            {showContacts && (
-                                <div className={`absolute top-2/3 max-xl:top-3/4 ${language == "ar" ? "right-11 max-xl:right-10" : "left-7 max-xl:left-10"} max-xl:flex max-xl:items-center`} dir={language == "ar" ? "rtl" : "ltr"}>
-                                    <div>
-                                        <Link href="https://wa.me/00966568591586" target="_blank" rel="noopener noreferrer" className='ml-4'>
-                                            <WhatsAppIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' />
-                                        </Link>
-                                    </div>
-                                    <div className='mt-3'>
-                                        <Link href="tel:00966568591586" className={`ml-4 text-[#7a9595] ${styles.number_link}`}>
-                                            {
-                                                language == "ar" ? <><PhoneIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' /><span className={styles.number}>+966568591586</span> </>
-                                                    :
-                                                    <><PhoneIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' /> <span className={styles.number}>+966568591586</span></>
-                                            }
-                                        </Link>
-                                    </div>
-                                    <div className='mt-3'>
-                                        <Link href="mailto:sigma.architectural@gmail.com" className='ml-4'>
-                                            <MailIcon sx={{ fontSize: "33px" }} className='text-[#7a9595]' />
-                                        </Link>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-
-                        <Link href="" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`bg-[#7a9595] text-white absolute p-4 px-5 pt-5 rounded-full ${language == "ar" ? "right-7 max-xl:right-10" : "left-7 max-xl:left-10"} ${styles.contacts} ${showContacts ? styles.showContacts : ''}`}>
-                            <TextsmsIcon sx={{ fontSize: "28px" }} />
-                        </Link>
-                    </>
-            }
-
+        <div dir={language == "ar" ? "rtl" : "ltr"}>
+            <div className={`fixed bottom-4 max-xl:bottom-11 ${language == "ar" ? "right-18 max-xl:right-10" : "left-16 max-xl:left-10"} flex items-center`} dir={language == "ar" ? "rtl" : "ltr"}>
+                <div>
+                    <Link href="https://wa.me/00966568591586" target="_blank" rel="noopener noreferrer" className='ml-4'>
+                        <WhatsAppIcon sx={{ fontSize: "30px" }} className='text-[#7a9595]' />
+                    </Link>
+                </div>
+                <div className=''>
+                    <Link href="tel:00966568591586" className={`ml-4 text-[#7a9595] ${styles.number_link}`}>
+                        {
+                            language == "ar" ? <><PhoneIcon sx={{ fontSize: "30px" }} className='text-[#7a9595]' /><span className={styles.number}>+966568591586</span> </>
+                                :
+                                <><PhoneIcon sx={{ fontSize: "30px" }} className='text-[#7a9595]' /> <span className={styles.number}>+966568591586</span></>
+                        }
+                    </Link>
+                </div>
+                <div className=''>
+                    <Link href="mailto:sigma.architectural@gmail.com" className='ml-4'>
+                        <MailIcon sx={{ fontSize: "30px" }} className='text-[#7a9595]' />
+                    </Link>
+                </div>
+            </div>
         </div>
     )
 }
