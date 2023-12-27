@@ -29,12 +29,12 @@ const Contact_home = () => {
         <div dir={language == "ar" ? "rtl" : "ltr"}>
             <div className={`fixed bottom-4 max-xl:bottom-11 ${language == "ar" ? "right-18 max-xl:right-10" : "left-16 max-xl:left-10"} flex items-center`} dir={language == "ar" ? "rtl" : "ltr"}>
                 <div>
-                    <Link href="https://wa.me/00966568591586" target="_blank" rel="noopener noreferrer" className='ml-4'>
+                    <Link href="https://wa.me/+966568591586" target="_blank" rel="noopener noreferrer" className='ml-4'>
                         <WhatsAppIcon sx={{ fontSize: "30px" }} className='text-[#7a9595]' />
                     </Link>
                 </div>
                 <div className=''>
-                    <Link href="tel:00966568591586" className={`ml-4 text-[#7a9595] ${styles.number_link}`}>
+                    <Link href="tel:0568591586" className={`ml-4 text-[#7a9595] ${styles.number_link}`}>
                         {
                             language == "ar" ? <><PhoneIcon sx={{ fontSize: "30px" }} className='text-[#7a9595]' /><span className={styles.number}>+966568591586</span> </>
                                 :
