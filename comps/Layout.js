@@ -20,13 +20,13 @@ const Layout = ({ children }) => {
         <div>
             {loading ? (
                 <>
-                    <div class="wrapper">
-                        <div class="circle_loading"></div>
-                        <div class="circle_loading"></div>
-                        <div class="circle_loading"></div>
-                        <div class="shadows"></div>
-                        <div class="shadows"></div>
-                        <div class="shadows"></div>
+                    <div className="wrapper">
+                        <div className="circle_loading"></div>
+                        <div className="circle_loading"></div>
+                        <div className="circle_loading"></div>
+                        <div className="shadows"></div>
+                        <div className="shadows"></div>
+                        <div className="shadows"></div>
                     </div>
                 </>
             ) : (

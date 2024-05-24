@@ -16,6 +16,24 @@ export default function Document() {
               `,
           }}
         />
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16575167565"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-16575167565');
+              `,
+            }}
+          ></script>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtm.js?id=GTM-PV5PSQZZ"
+          ></script>
       </Head>
       <body>
         <noscript>
