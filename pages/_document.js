@@ -1,5 +1,5 @@
-import { Html, Head, Body, Main, NextScript } from "next/document";
-import Script from "next/script";
+import { Html, Head, Body, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 export default function Document() {
   return (
@@ -17,23 +17,10 @@ export default function Document() {
           }}
         />
         <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=AW-16575167565"
-          ></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'AW-16575167565');
-              `,
-            }}
-          ></script>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtm.js?id=GTM-PV5PSQZZ"
-          ></script>
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16575167565"
+        ></script>
+        <script async src="./gtag.js"></script>
       </Head>
       <body>
         <noscript>
