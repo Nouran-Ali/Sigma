@@ -16,11 +16,6 @@ export default function Document() {
               `,
           }}
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16575167565"
-        ></script>
-        <script async src="./gtag.js"></script>
       </Head>
       <body>
         <noscript>
