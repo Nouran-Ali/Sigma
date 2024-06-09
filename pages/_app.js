@@ -2,15 +2,13 @@ import '@/styles/globals.css';
 import '@/styles/about.css';
 import '@/styles/our_work.css';
 import '@/styles/contact.css';
-import { Head } from 'next/document';
 import Layout from './../comps/Layout';
 import { useTranslation } from 'react-i18next';
-import { i18n } from '../comps/i18n';
 import { useEffect } from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
 
-const GA_TRACKING_ID = 'AW-16575167565';
+const GA_TRACKING_ID = 'AW-16563666109';
 
 const handleRouteChange = (url) => {
   window.gtag('config', GA_TRACKING_ID, {
@@ -54,7 +52,6 @@ export default function App({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-
     </>
   );
 }
