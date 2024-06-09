@@ -8,54 +8,34 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { useRouter } from 'next/router';
-import styles from "../styles/navbar.module.css";
+import styles from '../styles/navbar.module.css';
 import Link from 'next/link';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import { Select } from 'antd';
 
 const pages = [
-  {
-    title: 'Home',
-    title_ar: 'الرئيسيه',
-    href: '/',
-  },
-  {
-    title: 'About us',
-    title_ar: 'عنا',
-    href: '/about',
-  },
-  {
-    title: 'Services',
-    title_ar: 'خدماتنا',
-    href: '/services',
-  },
-  {
-    title: 'Our work',
-    title_ar: 'اعمالنا',
-    href: '/our_work',
-  },
-  {
-    title: 'Contact',
-    title_ar: "تواصل معنا",
-    href: '/contact',
-  },
+  { title: 'Home', title_ar: 'الرئيسيه', href: '/' },
+  { title: 'About us', title_ar: 'عنا', href: '/about' },
+  { title: 'Services', title_ar: 'خدماتنا', href: '/services' },
+  { title: 'Our work', title_ar: 'اعمالنا', href: '/our_work' },
+  { title: 'Contact', title_ar: 'تواصل معنا', href: '/contact' },
 ];
 
 function Navbar() {
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
+  const router = useRouter();
+  const { pathname } = router;
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const { t, i18n } = useTranslation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
@@ -68,47 +48,42 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
-  const [active, setActive] = useState()
-  const router = useRouter();
-
-  const { pathname } = router;
-
-  const [t, i18n] = useTranslation();
-  // const { language, changeLanguage } = i18n;
-  const { language } = i18n;
-
   const handleActiveLink = (href) => {
-    if (pathname == '/' && href == '/') {
+    if (pathname === '/' && href === '/') {
       return true;
     } else if (pathname.includes(href) && href !== '/') {
       return true;
     } else {
       return false;
     }
-  }
+  };
 
   const changeLanguageButton = (language) => {
-    i18next.changeLanguage(language, (err, t) => {
-      if (err) return console.log('something went wrong loading', err);
-    });
-
-    // Store the selected language in localStorage
-    localStorage.setItem('selectedLanguage', language);
+    i18n.changeLanguage(language);
+    localStorage.setItem('selectedLanguage', JSON.stringify(language));
   };
 
   useEffect(() => {
-    // On page load, retrieve the selected language from localStorage and set it
     const storedLanguage = localStorage.getItem('selectedLanguage');
     if (storedLanguage) {
-      changeLanguageButton(storedLanguage);
+      changeLanguageButton(JSON.parse(storedLanguage));
     } else {
-      // If no language is stored, use the browser's language as the default
-      changeLanguageButton(navigator.language);
+      changeLanguageButton('en');
     }
   }, []);
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none', borderBottom: "1px solid #283c3a1c", width: "100%" }} className='navbar pr-3' dir={language == "ar" ? "rtl" : "ltr"}>
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: 'transparent',
+        boxShadow: 'none',
+        borderBottom: '1px solid #283c3a1c',
+        width: '100%',
+      }}
+      className="navbar pr-3"
+      dir={i18n.language === 'ar' ? 'rtl' : 'ltr'}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -117,8 +92,8 @@ function Navbar() {
             component="a"
             href="/"
             sx={
-              language == "ar" ?
-                {
+              i18n.language === 'ar'
+                ? {
                   mr: 10,
                   ml: 9,
                   display: { xs: 'none', md: 'flex' },
@@ -128,8 +103,7 @@ function Navbar() {
                   color: 'inherit',
                   textDecoration: 'none',
                 }
-                :
-                {
+                : {
                   mr: 15,
                   ml: 9,
                   display: { xs: 'none', md: 'flex' },
@@ -141,11 +115,18 @@ function Navbar() {
                 }
             }
           >
-            <img src='../logo.png' width="55px" />
+            <img src="../logo.png" width="55px" alt="Logo" />
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' },
-            alignItems: 'center',textAlign: 'center'}} className="ml-5">
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'flex', md: 'none' },
+              alignItems: 'center',
+              textAlign: 'center',
+            }}
+            className="ml-5"
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -176,17 +157,27 @@ function Navbar() {
             >
               {pages.map(({ title, title_ar, href }, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Link href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`}>
-                    {i18n.language == "ar" ? title_ar : title}
+                  <Link
+                    href={href}
+                    className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '
+                      }`}
+                  >
+                    {i18n.language === 'ar' ? title_ar : title}
                   </Link>
                 </MenuItem>
               ))}
               <Button
-                onClick={() => changeLanguageButton(language == "ar" ? "en" : "ar")}
-                style={{ color: "#304644", fontWeight: "600", marginLeft: "44px" }}
-                className='ml-9'
+                onClick={() =>
+                  changeLanguageButton(i18n.language === 'ar' ? 'en' : 'ar')
+                }
+                style={{
+                  color: '#304644',
+                  fontWeight: '600',
+                  marginLeft: '44px',
+                }}
+                className="ml-9"
               >
-                {language == "ar" ? "EN" : "AR"}
+                {i18n.language === 'ar' ? 'EN' : 'AR'}
               </Button>
             </Menu>
           </Box>
@@ -196,8 +187,6 @@ function Navbar() {
             component="a"
             href="/"
             sx={{
-              // mr: 2,
-              // ml: "auto",
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
@@ -208,28 +197,43 @@ function Navbar() {
               justifyContent: 'flex-end',
             }}
           >
-            <img src='../logo.png' width="50px" />
+            <img src="../logo.png" width="50px" alt="Logo" />
           </Typography>
-          <Box sx={{
-            flexGrow: 1,
-            display: { xs: 'none', md: 'flex' },
-            textAlign: 'center',
-          }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', md: 'flex' },
+              textAlign: 'center',
+            }}
+          >
             {pages.map(({ title, title_ar, href }, index) => (
-              <Link key={index} href={href} className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '}`} style={{align: "center"}}>
-                {i18n.language == "ar" ? title_ar : title}
+              <Link
+                key={index}
+                href={href}
+                className={`${styles.link} ${handleActiveLink(href) ? styles.active : ' '
+                  }`}
+                style={{ align: 'center' }}
+              >
+                {i18n.language === 'ar' ? title_ar : title}
               </Link>
             ))}
             <Button
-              onClick={() => changeLanguageButton(language == "ar" ? "en" : "ar")}
-              style={{ color: "#304644", backgroundColor: "#f1f2f3", fontWeight: "600" }}
+              onClick={() =>
+                changeLanguageButton(i18n.language === 'ar' ? 'en' : 'ar')
+              }
+              style={{
+                color: '#304644',
+                backgroundColor: '#f1f2f3',
+                fontWeight: '600',
+              }}
             >
-              {language == "ar" ? "EN" : "AR"}
+              {i18n.language === 'ar' ? 'EN' : 'AR'}
             </Button>
           </Box>
         </Toolbar>
       </Container>
-    </AppBar >
+    </AppBar>
   );
 }
+
 export default Navbar;

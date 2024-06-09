@@ -3,10 +3,11 @@ import '@/styles/about.css';
 import '@/styles/our_work.css';
 import '@/styles/contact.css';
 import Layout from './../comps/Layout';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, I18nextProvider } from 'react-i18next';
 import { useEffect } from 'react';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
+import i18n from './../comps/i18n';
 
 const GA_TRACKING_ID = 'AW-16563666109';
 
@@ -17,7 +18,6 @@ const handleRouteChange = (url) => {
 };
 
 export default function App({ Component, pageProps }) {
-
   const [t, i18n] = useTranslation();
   const router = useRouter();
 
@@ -49,9 +49,11 @@ export default function App({ Component, pageProps }) {
         }}
       />
 
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <I18nextProvider i18n={i18n}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </I18nextProvider>
     </>
   );
 }
